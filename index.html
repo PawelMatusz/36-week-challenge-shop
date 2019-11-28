@@ -5,34 +5,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sky Planet</title>
+    <link rel="stylesheet" href="/dist/css/normalize.css">
     <link rel="stylesheet" href="/dist/css/style.css">
+    <title>Sky Planet</title>
+
 </head>
 
 <body>
-    <header>
-        <a href=""><img src="img/logo.png" alt=""></a>
-        <nav>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
-        </nav>
-        <a href=""><img src="img/shopCart.png" alt=""></a>
+    <header class="header">
+        <div class="wrapper">
+            <a class="header__logo" href=""><img src="/dist/img/logo.png" alt=""></a>
+            <nav class="header__nav">
+                <ul class="header__nav-container">
+                    <li class="header__nav-item"><a class="header__nav-link" href="">home</a></li>
+                    <li class="header__nav-item"><a class="header__nav-link header__nav-link--visible" href="">shop</a>
+                    </li>
+                    <li class="header__nav-item"><a class="header__nav-link" href="">journal</a></li>
+                    <li class="header__nav-item"><a class="header__nav-link" href="">elements</a></li>
+                    <li class="header__nav-item"><a class="header__nav-link" href="">pages</a></li>
+                </ul>
+                <a class="header__basket" href=""><img src="/dist/img/cart.png" alt="shop basket"></a>
+            </nav>
+        </div>
     </header>
     <main>
         <div class="slider">
+            <img src="/dist/img/plant__111.png" alt="">
             <div class="wrapper">
-                <img src="" alt="">
-                <div>
-                    <h1></h1>
-                    <p></p>
-                </div>
+                <p></p>
+                <p></p>
             </div>
         </div>
         <div class="wrapper">
-            <aside>
+            <form>
                 <section>
                     <h2></h2>
                     <ul>
@@ -46,7 +51,10 @@
                     </ul>
                 </section>
                 <section>
+                    <!-- <fieldgroup> -->
+
                     <h2></h2>
+                    <!-- <legend> -->
                     <form action="">
                         <label for="price">Price</label>
                         <input type="range" id="price">
@@ -86,7 +94,7 @@
                 <section>
                     <h2></h2>
                 </section>
-            </aside>
+            </form>
             <section>
                 <p></p>
                 <p></p>
@@ -106,10 +114,12 @@
                 <input type="button" value=" Send "></form>
         </section>
     </main>
-    <footer>
-        <p></p>
-        <nav></nav>
-    </footer>
+    <div class="wrapper">
+        <footer>
+            <p></p>
+            <ul></ul>
+        </footer>
+    </div>
 </body>
 
 </html>

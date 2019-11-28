@@ -1,0 +1,21 @@
+.header__nav {
+    display: flex;
+
+    &-container {
+        display: flex;
+    }
+
+    &-item {
+        margin-right: 3.5rem;
+    }
+
+    &-link {
+        text-transform: uppercase;
+        font-size: 1.6rem;
+        opacity: 0.5;
+
+        &--visible {
+            opacity: 1;
+        }
+    }
+}
