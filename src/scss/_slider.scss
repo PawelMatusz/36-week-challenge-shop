@@ -12,7 +12,7 @@
     width: 100%;
     height: 80vh;
     position: relative;
-    transition: src 1s;
+    transition: 1s;
 
     &__photo {
         animation: slider 6s linear infinite;
@@ -31,31 +31,13 @@
         bottom: 30%;
         right: 8%;
         max-width: 35rem;
-        font-family: 'Nothing You Could Do', cursive;
+        font-family: 'Nothing You Could Do';
         font-size: 3rem;
         line-height: 1.5;
         animation: slider 6s linear infinite;
     }
 }
 
-.btnPrev,
-.btnNext {
-    width: 5rem;
-    height: 5rem;
-    position: absolute;
-    font-size: 6rem;
-    z-index: 999;
-    top: 50%;
-    left: 5%;
-    transform: translate(-50%, -50%);
-    cursor: pointer;
-}
-
-.btnNext {
-    top: 50%;
-    left: 95%;
-    right: 5%;
-}
 
 
 @keyframes slider {

@@ -3,6 +3,7 @@
 
     &-container {
         display: flex;
+        align-items: flex-end;
     }
 
     &-item {
@@ -13,9 +14,20 @@
         text-transform: uppercase;
         font-size: 1.6rem;
         opacity: 0.5;
+        transition: opacity .2s;
+
+        &:hover {
+            opacity: 1;
+        }
 
         &--visible {
+            display: inline-block;
             opacity: 1;
+            transition: border-bottom .2s;
+
+            &:hover {
+                border-bottom: 2px solid black;
+            }
         }
     }
 }

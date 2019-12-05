@@ -1,0 +1,32 @@
+.arrow {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    height: 3.5rem;
+    widows: 3.5rem;
+    color: black;
+    font-size: 5rem;
+    opacity: 0.6;
+    overflow: hidden;
+    text-shadow: 0 -1.5rem black, 0 -3rem black;
+    cursor: pointer;
+
+
+    &:hover {
+        opacity: 1;
+    }
+
+    .fa {
+        animation: arrow 2s linear infinite;
+    }
+}
+
+@keyframes arrow {
+    from {
+        transform: translateY(-100%);
+    }
+
+    to {
+        transform: translateY(100%);
+    }
+}
