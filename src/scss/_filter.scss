@@ -1,0 +1,13 @@
+.filter {
+  &__header {
+    font-size: 2.4rem;
+    font-weight: normal;
+    margin-bottom: 4.5rem;
+  }
+  &__price {
+    &-header {
+      font-size: 1.8rem;
+      margin-bottom: 2.5rem;
+    }
+  }
+}

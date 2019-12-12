@@ -1,31 +1,26 @@
 .header {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    height: 9rem;
-    z-index: 5;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 9rem;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+
+  &__basket-icon {
+    transition: transform 0.2s;
+
+    &:hover {
+      display: inline-block;
+      transform: scale(1.2);
+    }
+  }
+
+  .wrapper {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-
-
-
-    &__basket-icon {
-        transition: transform .2s;
-
-        &:hover {
-            display: inline-block;
-            transform: scale(1.2);
-        }
-    }
-
-
-    .wrapper {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-
+  }
 }

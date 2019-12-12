@@ -1,152 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nothing+You+Could+Do"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css" />
+    <link rel="stylesheet" href="/dist/css/normalize.css" />
+    <link rel="stylesheet" href="/dist/css/style.css" />
+    <title>Sky Planet</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Nothing+You+Could+Do" rel="stylesheet">
-  <link rel="stylesheet" href="/dist/css/normalize.css" />
-  <link rel="stylesheet" href="/dist/css/style.css" />
-  <title>Sky Planet</title>
-</head>
-
-<body>
-  <header class="header">
-    <div class="wrapper">
-      <a class="header__logo" href=""
+  <body>
+    <header class="header">
+      <div class="wrapper">
+        <a class="header__logo" href=""
           ><img src="/dist/img/logo.png" alt=""
         /></a>
-      <nav class="header__nav">
-        <ul class="header__nav-container">
-          <li class="header__nav-item">
-            <a class="header__nav-link" href="#">home</a>
-          </li>
-          <li class="header__nav-item">
-            <a class="header__nav-link header__nav-link--visible" href="#"
-                >shop</a>
-          </li>
-          <li class="header__nav-item">
-            <a class="header__nav-link" href="#">journal</a>
-          </li>
-          <li class="header__nav-item">
-            <a class="header__nav-link" href="#">elements</a>
-          </li>
-          <li class="header__nav-item">
-            <a class="header__nav-link" href="#">pages</a>
-          </li>
-        </ul>
-        <a class="header__basket" href="#"
-            ><img class="header__basket-icon" src="/dist/img/cart.png" alt="shop basket"
+        <nav class="header__nav">
+          <ul class="header__nav-container">
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="#">home</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link header__nav-link--visible" href="#"
+                >shop</a
+              >
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="#">journal</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="#">elements</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="#">pages</a>
+            </li>
+          </ul>
+          <a class="header__basket" href="#"
+            ><img
+              class="header__basket-icon"
+              src="/dist/img/cart.png"
+              alt="shop basket"
           /></a>
-      </nav>
-    </div>
-  </header>
-  <div class="slider__container">
-    <div class="slider ">
-      <div class="slide wrapper">
-        <img class="slide__photo" src="/dist/img/plant__111.png" alt="" />
-        <div class="slide__content">
-          <p class="slide__description">Check out our products up to 60% promo</p>
+        </nav>
+      </div>
+    </header>
+    <div class="swiper-container">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <img class="swiper-photo" src="/dist/img/plant__111.png" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img
+            class="swiper-photo"
+            src="/dist/img/plant_2.png"
+            alt=""
+            class="swiper-photo"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            class="swiper-photo"
+            src="/dist/img/chair.png"
+            alt=""
+            class="swiper-photo"
+          />
         </div>
       </div>
-      <div class="slide__counter">
-        slide <span class="for"></span> of <span class="of"></span>
-      </div>
-      <div class="arrow">
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <!-- If we need navigation buttons  -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+      <div class="arrow__down">
         <i class="fa fa-angle-down" aria-hidden="true"></i>
       </div>
     </div>
-  </div>
-  <main class="">
-    <div class="wrapper">
-      <form class="">
-        <section>
-          <h2></h2>
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
+    <main class="main">
+      <div class=" shop wrapper">
+        <div class="shop__menu">
+          <section class="menu__categories">
+            <h2 class="menu__categories-header">Categories</h2>
+            <ul class="menu__categories-items">
+              <li class="menu__categories-item">All products</li>
+              <li class="menu__categories-item">Living</li>
+              <li class="menu__categories-item">Dining</li>
+              <li class="menu__categories-item">Furniture</li>
+              <li class="menu__categories-item">Lighting</li>
+              <li class="menu__categories-item">Technics</li>
+              <li class="menu__categories-item">Accesories</li>
+            </ul>
+          </section>
+          <section class="shop__filter">
+            <h2 class="filter__header">Filter by</h2>
+            <div class="filter__price">
+              <h3 class="filter__price-header" for="">Price</h3>
+              <input class="filter__price-min" type="number" value="" />
+              <input class="filter__price-max" type="number" value="" />
+              <input class="filter__price-btn" type="button" value="Filter" />
+            </div>
+            <div class="filter__color">
+              <h3 class="filter__color-header">Color</h3>
+              <input
+                class="filter__color-button filter__color-button--gray"
+                type="button"
+                value=""
+              />
+              <input
+                class="filter__color-button filter__color-button--white"
+                type="button"
+                value=""
+              />
+              <input
+                class="filter__color-button filter__color-button--red"
+                type="button"
+                value=""
+              />
+              <input
+                class="filter__color-button filter__color-button--blue"
+                type="button"
+                value=""
+              />
+              <input
+                class="filter__color-button filter__color-button--green"
+                type="button"
+                value=""
+              />
+            </div>
+            <div class="filter__size">
+              <h3 class="filter__size-header">Size</h3>
+              <button class="filter__size-small">Small</button>
+              <button class="filter__size-medium">Medium</button>
+              <button class="filter__size-large">Large</button>
+            </div>
+            <div>
+              <h3>Brands</h3>
+              <button>Bunshu Hamono</button>
+              <button>Bower</button>
+              <button>Braun</button>
+              <button>Elevenplus</button>
+              <button>Field</button>
+              <button>Henry Wilson</button>
+              <button>Menu</button>
+            </div>
+          </section>
+        </div>
+        <section class="shop__products">
+          <div class="products__options">
+            <p class="products__sort"></p>
+            <p class="products__visible"></p>
+          </div>
+          <section class="products__index">
+            <div class="products__card">efad</div>
+            <div class="products__card">afdf</div>
+            <div class="products__card">fasfsa</div>
+            <div class="products__card"></div>
+            <div class="products__card"></div>
+            <div class="products__card"></div>
+            <div class="products__card"></div>
+          </section>
         </section>
-        <section>
-          <!-- <fieldgroup> -->
-
-          <h2></h2>
-          <!-- <legend> -->
+      </div>
+      <section class="newsletter">
+        <div class="wrapper">
+          <h2>Get discount 35% off</h2>
           <form action="">
-            <label for="price">Price</label>
-            <input type="range" id="price" />
-            <input type="number" />
-            <input type="number" />
-            <input type="button" value=" Filter " />
+            <input type="mail" />
+            <input type="button" value="Send" />
           </form>
-        </section>
-        <section>
-          <h2></h2>
-          <div>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </section>
-        <section>
-          <h2></h2>
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-        </section>
-        <section>
-          <h2></h2>
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-        </section>
-        <section>
-          <h2></h2>
-        </section>
-      </form>
-      <section>
-        <p></p>
-        <p></p>
-        <section>
-          <div>
-            <img src="" alt="" />
-            <h3></h3>
-            <p></p>
-          </div>
-        </section>
+        </div>
       </section>
-    </div>
-    <section>
-      <h2></h2>
-      <form action="">
-        <input type="email" /> <input type="button" value=" Send " />
-      </form>
-    </section>
-  </main>
-  <div class="wrapper">
+    </main>
     <footer>
-      <p></p>
-      <ul></ul>
+      <div class="wrapper">
+        <p>&copy; 2017 Maison. All right reserved</p>
+        <ul>
+          <li>Shop</li>
+          <li>Journal</li>
+          <li>About us</li>
+          <li>Contact</li>
+        </ul>
+      </div>
     </footer>
-  </div>
-  <script src="/dist/js/app.js"></script>
-</body>
-
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="/dist/js/slider.js"></script>
+    <script src="/dist/js/app.js"></script>
+  </body>
 </html>

@@ -1,0 +1,11 @@
+.shop {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  padding-bottom: 6rem;
+  padding-top: 8rem;
+
+  &__menu {
+    width: 27.5rem;
+  }
+}
