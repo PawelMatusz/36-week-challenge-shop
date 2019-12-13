@@ -102,57 +102,62 @@
               <li class="menu__categories-item">Accesories</li>
             </ul>
           </section>
-          <section class="shop__filter">
+          <section class="menu__filters">
             <h2 class="filter__header">Filter by</h2>
             <div class="filter__price">
               <h3 class="filter__price-header" for="">Price</h3>
-              <input class="filter__price-min" type="number" value="" />
-              <input class="filter__price-max" type="number" value="" />
-              <input class="filter__price-btn" type="button" value="Filter" />
+              <form class="filter__price-form">
+                <input
+                  class="filter__price-value filter__price-value--min"
+                  type="number"
+                  value=""
+                />
+                <input
+                  class="filter__price-value filter__price-value--max"
+                  type="number"
+                  value=""
+                />
+                <button class="filter__price-button">
+                  Filter
+                </button>
+              </form>
             </div>
             <div class="filter__color">
               <h3 class="filter__color-header">Color</h3>
-              <input
+              <button
                 class="filter__color-button filter__color-button--gray"
-                type="button"
-                value=""
-              />
-              <input
+              ></button>
+              <button
                 class="filter__color-button filter__color-button--white"
-                type="button"
-                value=""
-              />
-              <input
+              ></button>
+              <button
                 class="filter__color-button filter__color-button--red"
-                type="button"
-                value=""
-              />
-              <input
+              ></button>
+              <button
                 class="filter__color-button filter__color-button--blue"
-                type="button"
-                value=""
-              />
-              <input
+              ></button>
+              <button
                 class="filter__color-button filter__color-button--green"
-                type="button"
-                value=""
-              />
+              ></button>
             </div>
             <div class="filter__size">
               <h3 class="filter__size-header">Size</h3>
-              <button class="filter__size-small">Small</button>
-              <button class="filter__size-medium">Medium</button>
-              <button class="filter__size-large">Large</button>
+              <button class="filter__size-button">Small</button>
+              <button class="filter__size-button">Medium</button>
+              <button class="filter__size-button">Large</button>
             </div>
-            <div>
-              <h3>Brands</h3>
-              <button>Bunshu Hamono</button>
-              <button>Bower</button>
-              <button>Braun</button>
-              <button>Elevenplus</button>
-              <button>Field</button>
-              <button>Henry Wilson</button>
-              <button>Menu</button>
+            <div class="filter__brands">
+              <h3 class="filter__brands-header">Brands</h3>
+              <button class="filter__brands-button">Bunshu Hamono</button>
+              <button class="filter__brands-button">Bower</button>
+              <button class="filter__brands-button">Braun</button>
+              <button class="filter__brands-button">Elevenplus</button>
+              <button class="filter__brands-button">Field</button>
+              <button class="filter__brands-button">Henry Wilson</button>
+              <button class="filter__brands-button">Menu</button>
+            </div>
+            <div class="filter__tags">
+              <h3 class="filter__tags-header">Popular Tags</h3>
             </div>
           </section>
         </div>
@@ -173,11 +178,15 @@
         </section>
       </div>
       <section class="newsletter">
-        <div class="wrapper">
-          <h2>Get discount 35% off</h2>
-          <form action="">
-            <input type="mail" />
-            <input type="button" value="Send" />
+        <div class="newsletter__container wrapper">
+          <h2 class="newsletter__header">Get discount 35% off</h2>
+          <form class="newsletter__form" action="">
+            <input
+              class="newsletter__form-mail"
+              type="mail"
+              placeholder="Enter your e-mail..."
+            />
+            <input class="newsletter__form-send" type="button" value="Send" />
           </form>
         </div>
       </section>

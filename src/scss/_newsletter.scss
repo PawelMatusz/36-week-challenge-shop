@@ -1,0 +1,37 @@
+$newsletter-height: 4rem;
+
+.newsletter {
+  background-color: #f5f5f5;
+  &__container {
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__header {
+    font-size: $newsletter-height;
+    margin-right: 8rem;
+    font-weight: normal;
+    font-family: 'Nothing You Could Do';
+  }
+  &__form {
+    height: $newsletter-height;
+    display: flex;
+    &-mail {
+      height: 100%;
+      width: 50rem;
+      margin-right: 1rem;
+      &[placeholder] {
+        font-size: 2rem;
+        font-weight: 100;
+        padding: 1rem;
+      }
+    }
+    &-send {
+      height: $newsletter-height;
+      width: 16rem;
+      border: 3px solid black;
+      font-size: 2rem;
+    }
+  }
+}
