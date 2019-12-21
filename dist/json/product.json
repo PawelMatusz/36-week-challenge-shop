@@ -1,40 +1,60 @@
 {
-    "products": [{
-        "id": 0,
-        "name": "scissors",
-        "description": "Flower Scissors",
-        "price": "$159.00",
-        "src": "https://raw.githubusercontent.com/PawelMatusz/36-week/master/dist/img/scissors.png"
-
-    }, {
-        "id": 2,
-        "name": "watch",
-        "description": "Grey Watch",
-        "price": "$215.00",
-        "src": "https://raw.githubusercontent.com/PawelMatusz/36-week/master/dist/img/watch.png"
-    }, {
-        "id": 3,
-        "name": "teapot",
-        "description": "Teapot",
-        "price": "$55.00",
-        "src": "https://raw.githubusercontent.com/PawelMatusz/36-week/master/dist/img/teapot.png"
-    }, {
-        "id": 4,
-        "name": "sweeper",
-        "description": "Sweeper and Funnel",
-        "price": "$59.00",
-        "src": "https://raw.githubusercontent.com/PawelMatusz/36-week/master/dist/img/sweeper.png"
-    }, {
-        "id": 5,
-        "name": "bulb",
-        "description": "White Bulb",
-        "price": "$349.00",
-        "src": "https://raw.githubusercontent.com/PawelMatusz/36-week/master/dist/img/bulb.png"
-    }, {
-        "id": 6,
-        "name": "bottle",
-        "description": "Bottle Humidifier",
-        "price": "$69.00",
-        "src": "https://raw.githubusercontent.com/PawelMatusz/36-week/master/dist/img/bottle.png"
-    }]
+  "products": [
+    {
+      "id": 0,
+      "name": "scissors",
+      "description": "Flower Scissors",
+      "price": "$159.00",
+      "value": 159,
+      "image": "https://raw.githubusercontent.com/PawelMatusz/36-week/master/dist/img/scissors.png"
+    },
+    {
+      "id": 2,
+      "name": "watch",
+      "description": "Grey Watch",
+      "price": "$215.00",
+      "value": 215,
+      "image": "https://raw.githubusercontent.com/PawelMatusz/36-week/master/dist/img/watch.png"
+    },
+    {
+      "id": 3,
+      "name": "teapot",
+      "description": "Teapot",
+      "price": "$55.00",
+      "value": 55,
+      "image": "https://raw.githubusercontent.com/PawelMatusz/36-week/master/dist/img/teapot.png"
+    },
+    {
+      "id": 4,
+      "name": "sweeper",
+      "description": "Sweeper and Funnel",
+      "price": "$59.00",
+      "value": 59,
+      "image": "https://raw.githubusercontent.com/PawelMatusz/36-week/master/dist/img/sweeper.png"
+    },
+    {
+      "id": 5,
+      "name": "bulb",
+      "description": "White Bulb",
+      "price": "$349.00",
+      "value": 349,
+      "image": "https://raw.githubusercontent.com/PawelMatusz/36-week/master/dist/img/bulb.png"
+    },
+    {
+      "id": 6,
+      "name": "bottle",
+      "description": "Bottle Humidifier",
+      "price": "$69.00",
+      "value": 69,
+      "image": "https://raw.githubusercontent.com/PawelMatusz/36-week/master/dist/img/bottle.png"
+    },
+    {
+      "id": 6,
+      "name": "bottle",
+      "description": "Bottle Humidifier",
+      "price": "$69.00",
+      "value": 69,
+      "image": "https://raw.githubusercontent.com/PawelMatusz/36-week/master/dist/img/bottle.png"
+    }
+  ]
 }
