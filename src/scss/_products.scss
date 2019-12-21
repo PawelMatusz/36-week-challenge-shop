@@ -17,8 +17,13 @@
   &__card {
     width: 40rem;
     height: 50rem;
+    display: flex;
     position: relative;
     margin-bottom: 2.5rem;
+    transition: transform 0.2s;
+    &:hover {
+      transform: scale(1.01);
+    }
     &-like {
       position: absolute;
       top: 3rem;
@@ -26,21 +31,29 @@
     }
     &-description {
       position: absolute;
-      bottom: 7rem;
+      bottom: 6rem;
       left: 4rem;
       font-size: 1.6rem;
     }
     &-price {
       position: absolute;
-      bottom: 4rem;
+      bottom: 3rem;
       left: 4rem;
       font-size: 1.6rem;
     }
     &-add {
+      opacity: 0;
       position: absolute;
-      bottom: 5rem;
-      right: 6rem;
+      bottom: 4rem;
+      right: 4rem;
       font-size: 1.6rem;
+      transition: opacity 0.2s;
+      &-cart {
+        margin-right: 0.8rem;
+      }
+    }
+    &:hover &-add {
+      opacity: 1;
     }
   }
 }
