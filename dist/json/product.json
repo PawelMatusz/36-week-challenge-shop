@@ -47,14 +47,6 @@
       "price": "$69.00",
       "value": 69,
       "image": "https://raw.githubusercontent.com/PawelMatusz/36-week/master/dist/img/bottle.png"
-    },
-    {
-      "id": 6,
-      "name": "bottle",
-      "description": "Bottle Humidifier",
-      "price": "$69.00",
-      "value": 69,
-      "image": "https://raw.githubusercontent.com/PawelMatusz/36-week/master/dist/img/bottle.png"
     }
   ]
 }
