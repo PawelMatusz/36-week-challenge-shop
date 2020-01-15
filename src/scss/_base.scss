@@ -21,6 +21,9 @@ html {
   font-family: Tahoma;
   overflow-x: hidden;
   width: 100%;
+  @include media(large) {
+    padding: 0 1rem;
+  }
 }
 
 .wrapper {

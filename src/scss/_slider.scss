@@ -11,6 +11,10 @@
     width: 100%;
     min-height: 100vh;
     background-color: #f5f5f5;
+
+    &:not(.swiper-container-initialized) .swiper-slide:not(:first-child) {
+      display: none;
+    }
   }
 
   &-wrapper {

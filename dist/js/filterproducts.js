@@ -1,9 +1,15 @@
-export const addProducts = products => {
+// import { addProducts } from './addproducts.js';
+
+export const filterProducts = products => {
+  productsIndex.innerHTML = '';
+  const filteredProducts = products.filter(
+    product => product.value >= minInput && product.value <= maxInput,
+  );
+  console.log(filteredProducts);
   const productsIndex = document.querySelector('.products__index');
   const productCard = document.querySelector('.product__card');
   productCard.outerHTML = '';
-
-  products.forEach(product => {
+  filteredProducts.forEach(product => {
     let newCard = productCard.cloneNode(true);
     const productPhoto = newCard.querySelector('.product__card-photo');
     const productDescription = newCard.querySelector(
@@ -18,12 +24,8 @@ export const addProducts = products => {
     productsIndex.appendChild(newCard);
   });
 };
-
-// funkcja przekazać max i min value i products i po kliknieciu dodawać
-
-// let filteredProducts = products.filter(product => {
-//   maxInput;
-//   let maxValue = maxInput.value || 250;
-
-//   return product.value >= minValue && product.value <= maxInput;
-// });
+document.querySelector('.filter__price-button').addEventListener('click', e => {
+  e.preventDefault();
+  const minInput = document.querySelector('.filter__price-value--min').value;
+  const maxInput = document.querySelector('.filter__price-value--max').value;
+});

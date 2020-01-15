@@ -4,12 +4,18 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    @include media(xlarge) {
+      justify-content: center;
+    }
   }
   &__options {
     display: flex;
     justify-content: space-between;
     font-size: 2rem;
     margin-bottom: 3rem;
+    @include media(xlarge) {
+      justify-content: space-around;
+    }
   }
 }
 
@@ -21,9 +27,18 @@
     position: relative;
     margin-bottom: 2.5rem;
     transition: transform 0.2s;
+    &:nth-of-type(odd) {
+      @include media(xlarge) {
+        margin-right: 2rem;
+      }
+    }
+    @include media(large) {
+      width: 35rem;
+    }
     &:hover {
       transform: scale(1.01);
     }
+
     &-like {
       position: absolute;
       top: 3rem;
@@ -40,6 +55,7 @@
       bottom: 3rem;
       left: 4rem;
       font-size: 1.6rem;
+      opacity: 0.7;
     }
     &-add {
       opacity: 0;

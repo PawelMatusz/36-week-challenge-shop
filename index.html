@@ -22,9 +22,9 @@
   <body>
     <header class="header">
       <div class="wrapper">
-        <a class="header__logo" href=""
-          ><img src="/dist/img/logo.png" alt=""
-        /></a>
+        <a class="header__logo" href="">
+          <img src="/dist/img/logo.png" alt="" />
+        </a>
         <nav class="header__nav">
           <ul class="header__nav-container">
             <li class="header__nav-item">
@@ -159,7 +159,14 @@
               Showing <span></span> of <span> </span><span> </span> result
             </p>
           </div>
-          <section class="products__index"></section>
+          <section class="products__index">
+            <div class="product__card">
+              <div class="product__card" >
+                <img class="product__card-photo" src="">
+                <p class="product__card-description"></p>
+                <p class="product__card-price"></p>
+            </div>
+          </section>
         </section>
       </div>
       <section class="newsletter">
@@ -176,20 +183,19 @@
         </div>
       </section>
     </main>
-    <footer>
-      <div class="wrapper">
-        <p>&copy; 2017 Maison. All right reserved</p>
-        <ul>
-          <li>Shop</li>
-          <li>Journal</li>
-          <li>About us</li>
-          <li>Contact</li>
+    <footer class="footer">
+      <div class="wrapper footer__container">
+        <p class="footer__description">&copy; 2017 Maison. All right reserved</p>
+        <ul class="footer__nav">
+          <li class="footer__nav-item"><a href="">Shop</a></li>
+          <li class="footer__nav-item"><a href="">Journal</a></li>
+          <li class="footer__nav-item"><a href="">About us</a></li>
+          <li class="footer__nav-item"><a href="">Contact</a></li>
         </ul>
       </div>
     </footer>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
     <script src="/dist/js/slider.js"></script>
     <script type="module" src="dist/js/shop.js"></script>
-    <script type="module" src="/dist/js/app.js"></script>
   </body>
 </html>

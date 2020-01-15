@@ -1,23 +1,34 @@
 // media querries map mixin
 
-$breakpoints: (xsmall: (min-width: 460px),
-    small: (min-width: 640px),
-    medium: (min-width: 800px),
-    large: (min-width: 1024px),
-    xlarge: (min-width: 1200px),
-    xxlarge: (min-width: 1440px),
+$breakpoints: (
+  xsmall: (
+    max-width: 460px,
+  ),
+  small: (
+    max-width: 640px,
+  ),
+  medium: (
+    max-width: 800px,
+  ),
+  large: (
+    max-width: 1024px,
+  ),
+  xlarge: (
+    max-width: 1200px,
+  ),
+  xxlarge: (
+    max-width: 1440px,
+  ),
 );
 
 @mixin media($breakpoint) {
-    $size: map-get($breakpoints, $breakpoint);
+  $size: map-get($breakpoints, $breakpoint);
 
-    @if($size) {
-        @media #{$size} {
-            @content;
-        }
+  @if ($size) {
+    @media #{$size} {
+      @content;
     }
-
-    @else {
-        @error 'nie rozpoznana wartość!'
-    }
+  } @else {
+    @error 'nie rozpoznana wartość!';
+  }
 }

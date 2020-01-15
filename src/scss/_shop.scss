@@ -4,9 +4,20 @@
   display: flex;
   padding-bottom: 6rem;
   padding-top: 8rem;
+  @include media(xlarge) {
+    justify-content: center;
+  }
+  &__products {
+    @include media(xlarge) {
+      width: 100rem;
+    }
+  }
 
   &__menu {
     width: 27.5rem;
     margin-right: 5rem;
+    @include media(xlarge) {
+      display: none;
+    }
   }
 }

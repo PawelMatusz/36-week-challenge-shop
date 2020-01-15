@@ -1,32 +1,31 @@
-.arrow {
-    position: absolute;
-    bottom: 5%;
-    left: 50%;
-    color: black;
-    font-size: 3rem;
-    opacity: 0.6;
-    overflow: hidden;
-    text-shadow: 0 -1.5rem black, 0 -3rem black;
-    cursor: pointer;
-    z-index: 5;
-    font-weight: 200;
+.arrow__down {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  color: black;
+  font-size: 3rem;
+  opacity: 0.6;
+  overflow: hidden;
+  text-shadow: 0 -1.5rem black, 0 -3rem black;
+  cursor: pointer;
+  z-index: 5;
+  font-weight: 200;
 
+  &:hover {
+    opacity: 1;
+  }
 
-    &:hover {
-        opacity: 1;
-    }
-
-    .fa {
-        animation: arrow 2s linear infinite;
-    }
+  .fa {
+    animation: arrow 2s linear infinite;
+  }
 }
 
 @keyframes arrow {
-    from {
-        transform: translateY(-200%);
-    }
+  from {
+    transform: translateY(-200%);
+  }
 
-    to {
-        transform: translateY(200%);
-    }
+  to {
+    transform: translateY(200%);
+  }
 }
