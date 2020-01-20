@@ -21,15 +21,15 @@ html {
   font-family: Tahoma;
   overflow-x: hidden;
   width: 100%;
-  @include media(large) {
-    padding: 0 1rem;
-  }
 }
 
 .wrapper {
   width: 100%;
   max-width: 117rem;
   margin: 0 auto;
+  @include media(large) {
+    padding: 0 1rem;
+  }
 }
 
 a {

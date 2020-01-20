@@ -7,20 +7,38 @@ $newsletter-height: 4rem;
     display: flex;
     align-items: center;
     justify-content: center;
+    @include media(medium) {
+      flex-direction: column;
+    }
   }
   &__header {
     font-size: $newsletter-height;
     margin-right: 8rem;
     font-weight: normal;
     font-family: 'Nothing You Could Do';
+    @include media(medium) {
+      margin-bottom: 1rem;
+      margin-right: 0;
+    }
+    @include media(small) {
+      font-size: 3rem;
+    }
   }
   &__form {
     height: $newsletter-height;
     display: flex;
+    @include media(small) {
+      flex-direction: column;
+      align-items: center;
+    }
+
     &-mail {
       height: 100%;
-      width: 50rem;
+      max-width: 50rem;
       margin-right: 1rem;
+      @include media(medium) {
+        margin-bottom: 1rem;
+      }
       &[placeholder] {
         font-size: 2rem;
         font-weight: 100;

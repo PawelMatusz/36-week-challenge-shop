@@ -22,16 +22,24 @@
   <body>
     <header class="header">
       <div class="wrapper">
+        <div class="nav__icon">
+          <span class="nav__item"></span>
+          <span class="nav__item"></span>
+          <span class="nav__item"></span>
+      </div>
+        
         <a class="header__logo" href="">
           <img src="/dist/img/logo.png" alt="" />
         </a>
+        <h1 class="header__logo--mobile">maison</h1>
         <nav class="header__nav">
-          <ul class="header__nav-container">
+          <ul class="header__nav-container ">
             <li class="header__nav-item">
+              
               <a class="header__nav-link" href="#">home</a>
             </li>
             <li class="header__nav-item">
-              <a class="header__nav-link header__nav-link--visible" href="#"
+              <a class="header__nav-link header__nav-link--shop" href="#"
                 >shop</a
               >
             </li>
@@ -53,7 +61,17 @@
           /></a>
         </nav>
       </div>
+          
     </header>
+    <nav class="header__nav--mobile">
+      <ul class="header__nav-list--mobile">
+          <li class="header__nav-item--mobile"><a href="#">Home</a></li>
+          <li class="header__nav-item--mobile"><a href="#">Shop</a></li>
+          <li class="header__nav-item--mobile"><a href="#">Journal</a></li>
+          <li class="header__nav-item--mobile"><a href="#">Elements</a></li>
+          <li class="header__nav-item--mobile"><a href="#">Pages</a></li>
+      </ul>
+  </nav>
     <div class="swiper-container">
       <!-- Additional required wrapper -->
       <div class="swiper-wrapper">
@@ -197,5 +215,6 @@
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
     <script src="/dist/js/slider.js"></script>
     <script type="module" src="dist/js/shop.js"></script>
+    <script src="./dist/js/app.js"></script>
   </body>
 </html>

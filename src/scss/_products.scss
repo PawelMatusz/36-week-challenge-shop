@@ -31,9 +31,12 @@
       @include media(xlarge) {
         margin-right: 2rem;
       }
+      @include media(small) {
+        margin-right: 0;
+      }
     }
     @include media(large) {
-      width: 35rem;
+      width: 30rem;
     }
     &:hover {
       transform: scale(1.01);
