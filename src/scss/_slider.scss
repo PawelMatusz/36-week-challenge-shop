@@ -9,7 +9,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
     background-color: #f5f5f5;
 
     &:not(.swiper-container-initialized) .swiper-slide:not(:first-child) {
