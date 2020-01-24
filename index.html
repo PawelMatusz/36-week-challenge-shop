@@ -4,10 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    
     <link
       href="https://fonts.googleapis.com/css?family=Nothing+You+Could+Do"
       rel="stylesheet"
@@ -15,7 +12,7 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css" />
     <link rel="stylesheet" href="/dist/css/normalize.css" />
     <link rel="stylesheet" href="/dist/css/style.css" />
-
+    <script src="https://kit.fontawesome.com/01e6ac9a51.js" crossorigin="anonymous"></script>
     <title>Sky Planet</title>
   </head>
 
@@ -126,9 +123,9 @@
               <form class="filter__price-form">
                 <input class="filter__price-value filter__price-value--min" />
                 <input class="filter__price-value filter__price-value--max" />
-                <button class="filter__price-button">
-                  Filter
-                </button>
+                <input type="button" value="Filter" class="filter__price-button">
+                  
+                </input>
               </form>
             </div>
             <div class="filter__color">
@@ -178,12 +175,12 @@
             </p>
           </div>
           <section class="products__index">
-            <div class="product__card">
+            
               <div class="product__card" >
                 <img class="product__card-photo" src="">
                 <p class="product__card-description"></p>
                 <p class="product__card-price"></p>
-            </div>
+            
           </section>
         </section>
       </div>
@@ -210,11 +207,16 @@
           <li class="footer__nav-item"><a href="">About us</a></li>
           <li class="footer__nav-item"><a href="">Contact</a></li>
         </ul>
+        <ul class="footer__nav footer__nav--mobile">
+          <li class="footer__nav-item footer__nav-item--mobile"><a href=""><i class="fab fa-facebook-f"></i></a></li>
+          <li class="footer__nav-item footer__nav-item--mobile"><a href=""><i class="fab fa-twitter"></i></a></li>
+          <li class="footer__nav-item footer__nav-item--mobile"><a href=""><i class="fab fa-pinterest"></i></a></li>
+          <li class="footer__nav-item footer__nav-item--mobile"><a href=""><i class="fab fa-youtube"></i></a></li>
+        </ul>
       </div>
     </footer>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
     <script src="/dist/js/slider.js"></script>
     <script type="module" src="dist/js/shop.js"></script>
-    <script src="./dist/js/app.js"></script>
   </body>
 </html>
