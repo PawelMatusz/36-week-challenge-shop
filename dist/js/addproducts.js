@@ -1,7 +1,7 @@
 export const addProducts = products => {
   const productsIndex = document.querySelector('.products__index');
   const productCard = document.querySelector('.product__card');
-  productCard.outerHTML = '';
+  productsIndex.innerHTML = '';
 
   products.forEach(product => {
     let newCard = productCard.cloneNode(true);
@@ -18,12 +18,3 @@ export const addProducts = products => {
     productsIndex.appendChild(newCard);
   });
 };
-
-// funkcja przekazać max i min value i products i po kliknieciu dodawać
-
-// let filteredProducts = products.filter(product => {
-//   maxInput;
-//   let maxValue = maxInput.value || 250;
-
-//   return product.value >= minValue && product.value <= maxInput;
-// });
