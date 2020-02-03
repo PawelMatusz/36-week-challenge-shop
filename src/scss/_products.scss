@@ -21,8 +21,7 @@
 
 .product {
   &__card {
-    width: 40rem;
-    height: 50rem;
+    max-width: 40rem;
     display: flex;
     position: relative;
     margin-bottom: 2.5rem;
@@ -31,13 +30,14 @@
       @include media(xlarge) {
         margin-right: 2rem;
       }
-      @include media(small) {
+      @include media(semi-large) {
         margin-right: 0;
       }
     }
-    @include media(large) {
-      width: 30rem;
+    @include media(semi-large) {
+      max-width: 42rem;
     }
+
     &:hover {
       transform: scale(1.01);
     }

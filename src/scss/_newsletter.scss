@@ -1,31 +1,28 @@
-$newsletter-height: 4rem;
-
 .newsletter {
   background-color: #f5f5f5;
   &__container {
-    height: 30vh;
+    min-height: 30vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 3rem 0;
     @include media(medium) {
       flex-direction: column;
     }
   }
   &__header {
-    font-size: $newsletter-height;
+    font-size: 4rem;
     margin-right: 8rem;
     font-weight: normal;
     font-family: 'Nothing You Could Do';
+    text-align: center;
     @include media(medium) {
       margin-bottom: 1rem;
       margin-right: 0;
     }
-    @include media(small) {
-      font-size: 3rem;
-    }
   }
   &__form {
-    height: $newsletter-height;
+    min-height: 4rem;
     display: flex;
     @include media(small) {
       flex-direction: column;
@@ -46,10 +43,11 @@ $newsletter-height: 4rem;
       }
     }
     &-send {
-      height: $newsletter-height;
+      min-height: 4rem;
       width: 16rem;
       border: 3px solid black;
       font-size: 2rem;
+      background-color: white;
     }
   }
 }
