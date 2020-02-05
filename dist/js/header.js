@@ -8,7 +8,7 @@ menuIcon.addEventListener('click', function() {
 
 menuItem.forEach(function(item) {
   item.addEventListener('click', () => {
-    menuIcon.classList.remove('is-nav-open');
+    header.classList.remove('is-nav-open');
   });
 });
 
