@@ -5,9 +5,7 @@ fetch('./dist/json/product.json')
   .then(resp => resp.json())
   .then(resp => {
     const products = resp.products;
-
     addProducts(products);
-
     document
       .querySelector('.filter__price-button')
       .addEventListener('click', () => filterProducts(products));
