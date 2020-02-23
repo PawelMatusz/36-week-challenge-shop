@@ -15,3 +15,6 @@ Project #36 from weekly webdev challenge using HTML CSS Javascript and JSON with
 * HTML5
 * CSS3 (SCSS)
 * JavaScript
+
+## DEMO
+https://wizardly-archimedes-6a4104.netlify.com
