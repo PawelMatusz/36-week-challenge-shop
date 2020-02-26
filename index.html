@@ -159,7 +159,14 @@
         </div>
         <section class="shop__products">
           <div class="products__options">
-            <p class="products__sort">Sort By: <span></span></p>
+            <form >
+            <label class="products__sort" for="sort">Sort By: 
+              <select class="products__sort-select" id="sort">
+                <option value="value">Price</option>
+                <option value="description">A-Z</option>
+              </select>
+            </label>
+          </form>
             <p class="products__visible">
               Showing <span></span> of <span> </span><span> </span> result
             </p>
@@ -209,5 +216,6 @@
     <script src="/dist/js/slider.js"></script>
     <script type="module" src="dist/js/shop.js"></script>
     <script src="./dist/js/handleSite.js"></script>
+    <!-- <script src="./dist/js/aaa.js"></script> -->
   </body>
 </html>

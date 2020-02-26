@@ -1,13 +1,16 @@
 import { addProducts } from '../js/ShopComponent/addproducts.js';
 import { filterProducts } from '../js/ShopComponent/filterproducts.js';
+import { getProducts } from './ShopComponent/getProducts.js';
+import { handleSelectChange } from './ShopComponent/handleSelectChange.js';
 
-fetch('./dist/json/product.json')
-  .then(resp => resp.json())
-  .then(resp => {
-    const products = resp.products;
-    addProducts(products);
-    document
-      .querySelector('.filter__price-button')
-      .addEventListener('click', () => filterProducts(products));
-  })
-  .catch(err => 'error');
+const sortSelect = document.querySelector('.products__sort-select');
+const filterPrice = document.querySelector('.filter__price-button');
+
+getProducts().then(data => {
+  const { products } = data;
+  addProducts(products);
+
+  filterPrice.addEventListener('click', () => filterProducts(products));
+
+  sortSelect.addEventListener('change', () => handleSelectChange(products));
+});

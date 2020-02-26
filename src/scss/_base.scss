@@ -25,11 +25,9 @@ html {
 
 .wrapper {
   width: 100%;
-  max-width: 117rem;
+  max-width: 120rem;
   margin: 0 auto;
-  @include media(large) {
-    padding: 0 1rem;
-  }
+  padding: 0 1.5rem;
 }
 
 a {

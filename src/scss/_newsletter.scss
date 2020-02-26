@@ -1,11 +1,11 @@
 .newsletter {
+  padding: 3rem 0;
   background-color: #f5f5f5;
   &__container {
     min-height: 30vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 3rem 0;
     @include media(medium) {
       flex-direction: column;
     }
