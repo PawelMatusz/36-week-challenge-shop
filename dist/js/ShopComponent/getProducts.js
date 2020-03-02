@@ -1,4 +1,4 @@
-const productsURL = './dist/json/product.json';
+const productsURL = './dist/json/products.json';
 
 export const getProducts = async () => {
   try {

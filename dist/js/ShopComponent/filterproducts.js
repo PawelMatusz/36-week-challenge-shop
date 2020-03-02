@@ -1,4 +1,4 @@
-import { addProducts } from './addproducts.js';
+import { addProducts } from './AddProducts.js';
 
 export const filterProducts = products => {
   let prod = products.filter(product => {

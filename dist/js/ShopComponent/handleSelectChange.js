@@ -1,4 +1,4 @@
-import { addProducts } from './addproducts.js';
+import { addProducts } from './AddProducts.js';
 
 export const handleSelectChange = products => {
   const key = document.querySelector('.products__sort-select').value;
