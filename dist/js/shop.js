@@ -14,21 +14,3 @@ getProducts().then(data => {
 
   sortSelect.addEventListener('change', () => handleSelectChange(products));
 });
-
-/* TODO handle categories filter
-
-
-  // const categoriesButton = [
-  //   ...document.querySelectorAll('.menu__categories-item'),
-  // ];
-
-  // categoriesButton.forEach(button =>
-  //   button.addEventListener('click', () => {
-  //     const btn = button.dataset.categories;
-
-  //     let prdd = products.filter(produ => produ.categories === btn);
-  //     addProducts(prdd);
-  //   }),
-  // );
-
-*/

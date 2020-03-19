@@ -23,11 +23,15 @@
       display: none;
     }
     &-item {
+      transition: opacity 0.2s;
       &:not(:last-child) {
         margin-right: 4rem;
       }
       &--mobile {
         font-size: 2rem;
+      }
+      &:hover {
+        opacity: 0.5;
       }
     }
     &--mobile {
