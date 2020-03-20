@@ -1,5 +1,5 @@
-import { addProducts } from '../js/ShopComponent/AddProducts.js';
-import { filterProducts } from '../js/ShopComponent/FilterProducts.js';
+import { addProducts } from './ShopComponent/AddProducts.js';
+import { filterProducts } from './ShopComponent/FilterProducts.js';
 import { getProducts } from './ShopComponent/GetProducts.js';
 import { handleSelectChange } from './ShopComponent/HandleSelectChange.js';
 
