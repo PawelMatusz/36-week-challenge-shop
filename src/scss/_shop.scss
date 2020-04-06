@@ -4,14 +4,14 @@
   display: flex;
   padding-bottom: 6rem;
   padding-top: 9rem;
-  @include media(xlarge) {
+  @include media(large) {
     flex-direction: column;
   }
 
   &__menu {
     width: 27.5rem;
     margin-right: 5rem;
-    @include media(xlarge) {
+    @include media(large) {
       display: none;
       &.is-menu-open {
         display: flex;
@@ -24,7 +24,7 @@
   }
   &__button {
     display: none;
-    @include media(xlarge) {
+    @include media(large) {
       display: block;
       min-height: 4rem;
       width: 16rem;

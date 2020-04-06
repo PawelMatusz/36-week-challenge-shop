@@ -2,9 +2,6 @@
   &__categories {
     border-bottom: 1px solid black;
     margin-bottom: 5rem;
-    @include media(xlarge) {
-      display: none;
-    }
     &-header {
       font-size: 2.4rem;
       margin-bottom: 3rem;
@@ -32,7 +29,7 @@
     }
   }
   &__filters {
-    @include media(xlarge) {
+    @include media(large) {
       display: flex;
       flex-direction: column;
       justify-content: center;

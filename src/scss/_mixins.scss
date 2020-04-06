@@ -1,9 +1,6 @@
 // media querries map mixin
 
 $breakpoints: (
-  xxsmall: (
-    max-width: 460px,
-  ),
   xsmall: (
     max-width: 640px,
   ),
@@ -13,17 +10,8 @@ $breakpoints: (
   medium: (
     max-width: 800px,
   ),
-  semi-large: (
-    max-width: 850px,
-  ),
   large: (
     max-width: 1024px,
-  ),
-  xlarge: (
-    max-width: 1200px,
-  ),
-  xxlarge: (
-    max-width: 1440px,
   ),
 );
 

@@ -36,7 +36,7 @@ $font-weight: normal;
   }
   &__color {
     margin-bottom: 4rem;
-    @include media(xlarge) {
+    @include media(large) {
       display: none;
     }
     &-header {
@@ -73,7 +73,7 @@ $font-weight: normal;
   }
   &__size {
     margin-bottom: 4rem;
-    @include media(xlarge) {
+    @include media(large) {
       display: none;
     }
     &-header {
@@ -95,7 +95,7 @@ $font-weight: normal;
   &__brands {
     margin-bottom: 6rem;
     border-bottom: 1px solid black;
-    @include media(xlarge) {
+    @include media(large) {
       display: none;
     }
     &-header {
@@ -117,7 +117,7 @@ $font-weight: normal;
   }
   &__tags {
     margin-bottom: 3rem;
-    @include media(xlarge) {
+    @include media(large) {
       display: none;
     }
     &-header {
