@@ -33,7 +33,7 @@
       height: 100%;
       max-width: 50rem;
       margin-right: 1rem;
-      @include media(medium) {
+      @include media(small) {
         margin-bottom: 1rem;
       }
       &[placeholder] {

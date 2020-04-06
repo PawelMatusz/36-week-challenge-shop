@@ -19,6 +19,7 @@
       left: 0;
       right: 0;
       background-color: white;
+      font-size: 2rem;
       .is-nav-open & {
         opacity: 1;
         visibility: visible;
@@ -40,6 +41,10 @@
     font-size: 1.6rem;
     opacity: 0.5;
     transition: opacity 0.2s;
+
+    @include media(large) {
+      font-size: 3rem;
+    }
 
     &:hover {
       opacity: 1;

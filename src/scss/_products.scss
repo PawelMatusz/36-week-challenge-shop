@@ -1,11 +1,17 @@
 .products {
   &__index {
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    @include media(xlarge) {
-      justify-content: center;
+    // position: relative;
+    // display: flex;
+    // flex-wrap: wrap;
+    // justify-content: space-between;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 3rem;
+
+    @include media(medium) {
+      grid-template-columns: repeat(1, 10fr);
     }
   }
   &__options {
@@ -25,25 +31,14 @@
 .product {
   &__card {
     max-width: 40rem;
-    display: flex;
+    justify-self: center;
     position: relative;
     margin-bottom: 2.5rem;
     transition: transform 0.2s;
     font-family: 'Maison Neue';
-    &:nth-of-type(odd) {
-      @include media(xlarge) {
-        margin-right: 2rem;
-      }
-      @include media(semi-large) {
-        margin-right: 0;
-      }
-    }
-    @include media(semi-large) {
-      max-width: 42rem;
-    }
 
     &:hover {
-      transform: scale(1.01);
+      transform: scale(1.02);
     }
 
     &-like {
