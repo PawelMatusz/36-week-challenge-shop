@@ -16,11 +16,13 @@ $font-weight: normal;
     }
     &-form {
       display: flex;
+      font-size: 1.5rem;
     }
     &-value {
       width: 7.5rem;
       height: 3rem;
       margin-right: 1rem;
+
       &:last-of-type {
         margin-right: 2.5rem;
       }
@@ -30,7 +32,6 @@ $font-weight: normal;
       height: 3rem;
       border: none;
       background-color: #f2f2f2;
-      font-size: 1.5rem;
     }
   }
   &__color {

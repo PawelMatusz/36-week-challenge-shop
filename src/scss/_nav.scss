@@ -1,6 +1,5 @@
 .header__nav {
   display: flex;
-
   &-container {
     display: flex;
     align-items: flex-end;
@@ -28,7 +27,7 @@
   }
 
   &-item {
-    margin-right: 3.5rem;
+    margin-right: 5rem;
 
     @include media(large) {
       margin-right: 0;

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    
+    <link href="//db.onlinewebfonts.com/c/63467b9cbd4a4d7eafb5e64946ecaa18?family=Maison+Neue" rel="stylesheet" type="text/css"/>
     <link
       href="https://fonts.googleapis.com/css?family=Nothing+You+Could+Do"
       rel="stylesheet"
@@ -17,7 +17,7 @@
   </head>
 
   <body>
-    <header class="header">
+    <header id="header" class="header">
       <div class="wrapper">
         <div class="nav__icon">
           <span class="nav__item"></span>
@@ -32,21 +32,15 @@
           <ul class="header__nav-container ">
             <li class="header__nav-item">
               
-              <a class="header__nav-link" href="#">home</a>
+              <a class="header__nav-link" href="#header">home</a>
             </li>
             <li class="header__nav-item">
-              <a class="header__nav-link header__nav-link--shop" href="#"
+              <a class="header__nav-link header__nav-link--shop" href="#shop"
                 >shop</a
               >
             </li>
             <li class="header__nav-item">
-              <a class="header__nav-link" href="#">journal</a>
-            </li>
-            <li class="header__nav-item">
-              <a class="header__nav-link" href="#">elements</a>
-            </li>
-            <li class="header__nav-item">
-              <a class="header__nav-link" href="#">pages</a>
+              <a class="header__nav-link" href="#newsletter">contact</a>
             </li>
           </ul>
           <a class="header__basket" href="#"
@@ -88,12 +82,12 @@
       <!-- If we need navigation buttons  -->
       <div class="swiper-button-prev"></div>
       <div class="swiper-button-next"></div>
-      <div class="arrow__down">
+      <a href="#main" class="arrow__down">
         <i class="fa fa-angle-down" aria-hidden="true"></i>
-      </div>
+      </a>
     </div>
-    <main class="main">
-      <div class=" shop wrapper">
+    <main id="main" class="main">
+      <div id="shop" class=" shop wrapper">
         <button class="shop__button">Filter</button>
         <div class="shop__menu">
           <section class="menu__categories">
@@ -152,9 +146,6 @@
               <button class="filter__brands-button">Henry Wilson</button>
               <button class="filter__brands-button">Menu</button>
             </div>
-            <div class="filter__tags">
-              <h3 class="filter__tags-header">Popular Tags</h3>
-            </div>
           </section>
         </div>
         <section class="shop__products">
@@ -179,7 +170,7 @@
           </section>
         </section>
       </div>
-      <section class="newsletter">
+      <section id="newsletter" class="newsletter">
         <div class="wrapper newsletter__container ">
           <h2 class="newsletter__header">Get discount 35% off</h2>
           <form class="newsletter__form" >
@@ -196,17 +187,17 @@
     <footer class="footer">
       <div class="wrapper footer__container">
         <p class="footer__description">&copy; 2017 Maison. All right reserved</p>
-        <ul class="footer__nav">
+        <!-- <ul class="footer__nav">
           <li class="footer__nav-item"><a href="">Shop</a></li>
           <li class="footer__nav-item"><a href="">Journal</a></li>
           <li class="footer__nav-item"><a href="">About us</a></li>
           <li class="footer__nav-item"><a href="">Contact</a></li>
-        </ul>
-        <ul class="footer__nav footer__nav--mobile">
-          <li class="footer__nav-item footer__nav-item--mobile"><a href=""><i class="fab fa-facebook-f"></i></a></li>
-          <li class="footer__nav-item footer__nav-item--mobile"><a href=""><i class="fab fa-twitter"></i></a></li>
-          <li class="footer__nav-item footer__nav-item--mobile"><a href=""><i class="fab fa-pinterest"></i></a></li>
-          <li class="footer__nav-item footer__nav-item--mobile"><a href=""><i class="fab fa-youtube"></i></a></li>
+        </ul> -->
+        <ul class="footer__nav ">
+          <li class="footer__nav-item "><a rel="nofollow noreferrer" href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
+          <li class="footer__nav-item "><a rel="nofollow noreferrer" href="https://twitter.com/explore"><i class="fab fa-twitter"></i></a></li>
+          <li class="footer__nav-item "><a rel="nofollow noreferrer" href="https://pl.pinterest.com/"><i class="fab fa-pinterest"></i></a></li>
+          <li class="footer__nav-item "><a rel="nofollow noreferrer" href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a></li>
         </ul>
       </div>
     </footer>
