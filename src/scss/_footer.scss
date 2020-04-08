@@ -1,44 +1,28 @@
 .footer {
-  overflow: hidden;
   &__container {
     min-height: 11vh;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-evenly;
     font-size: 2rem;
-    flex-wrap: wrap;
-    @include media(xsmall) {
-      justify-content: center;
+    // flex-wrap: wrap;
+    @include media(medium) {
+      flex-direction: column;
     }
   }
   &__description {
     opacity: 0.7;
-    @include media(medium) {
-      font-size: 1.6rem;
-    }
   }
   &__nav {
     display: flex;
-    @include media(medium) {
-      display: none;
-    }
     &-item {
       transition: opacity 0.2s;
       &:not(:last-child) {
         margin-right: 4rem;
       }
-      &--mobile {
-        font-size: 2rem;
-      }
+
       &:hover {
         opacity: 0.5;
-      }
-    }
-    &--mobile {
-      font-size: 1.8rem;
-      display: none;
-      @include media(medium) {
-        display: flex;
       }
     }
   }

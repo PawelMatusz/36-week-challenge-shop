@@ -12,7 +12,7 @@ export const filterProducts = products => {
 
 function getMinPrice() {
   let minInputValue = parseFloat(
-    document.querySelector('.filter__price-value--min').value,
+    document.querySelector('.filter__price-value--min').value
   );
 
   return minInputValue || 0;
@@ -20,7 +20,7 @@ function getMinPrice() {
 
 function getMaxPrice(products) {
   let maxInputValue = parseFloat(
-    document.querySelector('.filter__price-value--max').value,
+    document.querySelector('.filter__price-value--max').value
   );
   let maxValue = Math.max(...products.map(product => product.value));
 

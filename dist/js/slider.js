@@ -8,7 +8,10 @@ var mySwiper = new Swiper('.swiper-container', {
   // If we need pagination
   pagination: {
     el: '.swiper-pagination',
-    type: 'fraction',
+    type: 'custom',
+    renderCustom: function(mySwiper, current, total) {
+      return current + ' of ' + total;
+    },
   },
 
   autoplay: {

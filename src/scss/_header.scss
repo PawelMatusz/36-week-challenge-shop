@@ -10,10 +10,6 @@
   align-items: center;
   background-color: transparent;
 
-  @include media(large) {
-    padding: 0 1rem;
-  }
-
   &__basket-icon {
     transition: transform 0.2s;
 

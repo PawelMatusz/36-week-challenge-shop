@@ -52,12 +52,17 @@
         </nav>
       </div>
     </header>
+    <div class="slider">
     <div class="swiper-container">
       <!-- Additional required wrapper -->
       <div class="swiper-wrapper">
         <!-- Slides -->
         <div class="swiper-slide">
           <img class="swiper-photo" src="/dist/img/plant__111.png" alt="" />
+          <div class="swiper-description">
+            <h2>Discount 40% </h2>
+            <h2>Sale!!</h2>
+          </div>
         </div>
         <div class="swiper-slide">
           <img
@@ -66,19 +71,26 @@
             alt=""
             class="swiper-photo"
           />
+          <div class="swiper-description">
+            <h2>Discount 40% </h2>
+            <h2>Sale!!</h2>
+          </div>
         </div>
         <div class="swiper-slide">
           <img
-            class="swiper-photo"
+            class="swiper-photo swiper-photo-chair"
             src="/dist/img/chair.png"
             alt=""
             class="swiper-photo"
           />
+          <div class="swiper-description">
+          <h2>Discount 40% </h2>
+          <h2>Sale!!</h2>
+        </div>
         </div>
       </div>
       <!-- If we need pagination -->
       <div class="swiper-pagination"></div>
-
       <!-- If we need navigation buttons  -->
       <div class="swiper-button-prev"></div>
       <div class="swiper-button-next"></div>
@@ -86,6 +98,8 @@
         <i class="fa fa-angle-down" aria-hidden="true"></i>
       </a>
     </div>
+  </div>
+    
     <main id="main" class="main">
       <div id="shop" class=" shop wrapper">
         <button class="shop__button">Filter</button>
@@ -153,6 +167,7 @@
             <form >
             <label class="products__sort" for="sort">Sort By: 
               <select class="products__sort-select" id="sort">
+                <option value="empty"></option>
                 <option value="value">Price</option>
                 <option value="description">A-Z</option>
               </select>
