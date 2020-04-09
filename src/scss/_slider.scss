@@ -28,13 +28,14 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
-    transition: visibility 0.9s, opacity 0.9s;
     opacity: 0;
     visibility: hidden;
+    transition: visibility 0.9s, opacity 0.9s;
     @include media(medium) {
       grid-template-columns: 1fr;
     }
-    &-active {
+    &-active,
+    &-duplicate-active {
       opacity: 1;
       visibility: visible;
     }
