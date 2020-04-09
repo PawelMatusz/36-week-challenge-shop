@@ -29,15 +29,14 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
     transition: visibility 0.9s, opacity 0.9s;
+    opacity: 0;
+    visibility: hidden;
     @include media(medium) {
       grid-template-columns: 1fr;
     }
-    &-next,
-    &-prev,
-    &-duplicate-prev,
-    &-duplicate-next {
-      opacity: 0;
-      visibility: hidden;
+    &-active {
+      opacity: 1;
+      visibility: visible;
     }
   }
   &-description {

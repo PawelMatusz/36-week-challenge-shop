@@ -5,7 +5,7 @@
     align-items: center;
     justify-content: space-evenly;
     font-size: 2rem;
-    // flex-wrap: wrap;
+    flex-wrap: wrap;
     @include media(medium) {
       flex-direction: column;
     }
