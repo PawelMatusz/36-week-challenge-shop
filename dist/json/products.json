@@ -7,7 +7,7 @@
       "price": "$159.00",
       "value": 159,
       "image": "https://raw.githubusercontent.com/PawelMatusz/36-week/master/dist/img/scissors.png",
-      "categories": "living"
+      "categories": ["black", "gray", "medium", "braun"]
     },
     {
       "id": 2,
@@ -16,7 +16,7 @@
       "price": "$215.00",
       "value": 215,
       "image": "https://raw.githubusercontent.com/PawelMatusz/36-week/master/dist/img/watch.png",
-      "categories": "living"
+      "categories": ["black", "gray", "medium", "braun"]
     },
     {
       "id": 3,
@@ -25,7 +25,7 @@
       "price": "$55.00",
       "value": 55,
       "image": "https://raw.githubusercontent.com/PawelMatusz/36-week/master/dist/img/teapot.png",
-      "categories": "accesories"
+      "categories": ["green", "gray", "medium", "bower"]
     },
     {
       "id": 4,
@@ -34,7 +34,7 @@
       "price": "$59.00",
       "value": 59,
       "image": "https://raw.githubusercontent.com/PawelMatusz/36-week/master/dist/img/sweeper.png",
-      "categories": "accesories"
+      "categories": ["red", "gray", "medium", "braun"]
     },
     {
       "id": 5,
@@ -43,7 +43,7 @@
       "price": "$349.00",
       "value": 349,
       "image": "https://raw.githubusercontent.com/PawelMatusz/36-week/master/dist/img/bulb.png",
-      "categories": "lighting"
+      "categories": ["green", "gray", "small", "braun"]
     },
     {
       "id": 6,
@@ -52,7 +52,7 @@
       "price": "$69.00",
       "value": 69,
       "image": "https://raw.githubusercontent.com/PawelMatusz/36-week/master/dist/img/bottle.png",
-      "categories": "accesories"
+      "categories": ["white", "gray", "large", "bower"]
     }
   ]
 }
