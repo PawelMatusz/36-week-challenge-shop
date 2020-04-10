@@ -34,6 +34,9 @@
         display: inline-block;
         font-size: 1.4rem;
       }
+      &:hover {
+        opacity: 1;
+      }
     }
   }
   &__filters {
