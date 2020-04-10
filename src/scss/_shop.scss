@@ -11,14 +11,17 @@
   &__menu {
     width: 27.5rem;
     margin-right: 5rem;
+
     @include media(large) {
       display: none;
       &.is-menu-open {
         display: flex;
         width: 100%;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
+        flex-direction: column;
         margin-bottom: 5rem;
+        margin-right: 0;
       }
     }
   }

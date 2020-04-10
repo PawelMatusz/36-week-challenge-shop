@@ -2,13 +2,14 @@
   &__categories {
     border-bottom: 1px solid black;
     margin-bottom: 5rem;
+    @include media(large) {
+      margin-bottom: 2rem;
+      text-align: center;
+    }
     &-header {
       font-size: 2.4rem;
       margin-bottom: 3rem;
       font-weight: normal;
-      @include media(medium) {
-        font-size: 1.8rem;
-      }
     }
     &-item {
       display: block;
@@ -18,9 +19,16 @@
 
       &:last-child {
         margin-bottom: 5rem;
+        @include media(large) {
+          margin-bottom: 0;
+        }
       }
       &:not(:last-child) {
         margin-bottom: 3rem;
+        @include media(large) {
+          margin-bottom: 2rem;
+          margin-right: 1rem;
+        }
       }
       @include media(large) {
         display: inline-block;

@@ -1,6 +1,8 @@
 $filter-header-size: 2rem;
 $font-weight: normal;
-
+.menu__filters {
+  width: 100%;
+}
 .filter {
   &__header {
     margin-bottom: 4.5rem;
@@ -9,10 +11,17 @@ $font-weight: normal;
   }
   &__price {
     margin-bottom: 3rem;
+    @include media(large) {
+      display: flex;
+      justify-content: center;
+    }
     &-header {
       margin-bottom: 2rem;
       font-size: $filter-header-size;
       font-weight: $font-weight;
+      @include media(large) {
+        margin-right: 2rem;
+      }
     }
     &-form {
       display: flex;
@@ -37,12 +46,17 @@ $font-weight: normal;
   &__color {
     margin-bottom: 4rem;
     @include media(large) {
-      display: none;
+      display: flex;
+      justify-content: center;
+      align-self: center;
     }
     &-header {
       margin-bottom: 2rem;
       font-size: $filter-header-size;
       font-weight: $font-weight;
+      @include media(large) {
+        margin-right: 2rem;
+      }
     }
     &-button {
       width: 3rem;
@@ -51,7 +65,7 @@ $font-weight: normal;
       border: none;
       cursor: pointer;
       &:not(:last-child) {
-        margin-right: 1rem;
+        margin-right: 1.5rem;
       }
       &--gray {
         background-color: #bbbbbb;
@@ -74,12 +88,18 @@ $font-weight: normal;
   &__size {
     margin-bottom: 4rem;
     @include media(large) {
-      display: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
     &-header {
       margin-bottom: 2rem;
       font-size: $filter-header-size;
       font-weight: $font-weight;
+      @include media(large) {
+        margin-right: 2rem;
+        margin-bottom: 0;
+      }
     }
     &-button {
       display: block;
@@ -89,6 +109,10 @@ $font-weight: normal;
       opacity: 0.7;
       &:not(:last-child) {
         margin-bottom: 3rem;
+        @include media(large) {
+          margin-bottom: 0;
+          margin-right: 2rem;
+        }
       }
     }
   }
@@ -113,17 +137,6 @@ $font-weight: normal;
       &:last-child {
         margin-bottom: 6rem;
       }
-    }
-  }
-  &__tags {
-    margin-bottom: 3rem;
-    @include media(large) {
-      display: none;
-    }
-    &-header {
-      margin-bottom: 2rem;
-      font-size: $filter-header-size;
-      font-weight: $font-weight;
     }
   }
 }
