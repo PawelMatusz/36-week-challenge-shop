@@ -5,4 +5,7 @@ export const filterByCategories = (products, button) => {
     product.categories.includes(button.dataset.categories)
   );
   addProducts(prod);
+  if (button.dataset.categories === 'all') {
+    addProducts(products);
+  }
 };
