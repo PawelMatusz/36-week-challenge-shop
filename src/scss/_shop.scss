@@ -7,6 +7,35 @@
   @include media(large) {
     flex-direction: column;
   }
+  &__basket {
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    width: 100%;
+    &-area {
+      position: absolute;
+      top: 4rem;
+      right: -4rem;
+      width: 60rem;
+      height: 50rem;
+      display: flex;
+      background-color: red;
+    }
+    &-summary {
+      display: block;
+      &::-webkit-details-marker {
+        display: none;
+      }
+      &::before {
+        content: url(/dist/img/cart.png);
+        padding-right: 0.5em;
+      }
+    }
+    &[open] > &-summary::before {
+      content: url(/dist/img/cart.png);
+    }
+  }
 
   &__menu {
     width: 27.5rem;

@@ -43,12 +43,9 @@
               <a class="header__nav-link" href="#newsletter">contact</a>
             </li>
           </ul>
-          <a class="header__basket" href="#"
-            ><img
-              class="header__basket-icon"
-              src="/dist/img/cart.png"
-              alt="shop basket"
-          /></a>
+          <details  class="shop__basket"> <summary class="shop__basket-summary"></summary> 
+            <div class="shop__basket-area"></div>
+        </details>
         </nav>
       </div>
     </header>
@@ -182,6 +179,9 @@
                 <img class="product__card-photo" src="">
                 <p class="product__card-description"></p>
                 <p class="product__card-price"></p>
+                <button class="product__card-like"><i class="far fa-heart"></i></button>
+                <button class="product__card-add"><i class="fas fa-shopping-basket"></i></button>
+                </div>
           </section>
         </section>
       </div>

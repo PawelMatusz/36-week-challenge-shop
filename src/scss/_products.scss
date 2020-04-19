@@ -40,6 +40,12 @@
       position: absolute;
       top: 3rem;
       right: 3rem;
+      opacity: 0;
+      font-size: 2.5rem;
+      transition: opacity 0.2s;
+      &:hover {
+        color: red;
+      }
     }
     &-description {
       position: absolute;
@@ -59,14 +65,42 @@
       position: absolute;
       bottom: 4rem;
       right: 4rem;
-      font-size: 1.6rem;
+      font-size: 3rem;
       transition: opacity 0.2s;
-      &-cart {
-        margin-right: 0.8rem;
-      }
     }
-    &:hover &-add {
+    &:hover &-add,
+    &:hover &-like {
       opacity: 1;
     }
+  }
+}
+
+.shop__basket {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  width: 100%;
+  &-area {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    width: 50rem;
+    height: 50rem;
+    display: flex;
+    background-color: red;
+  }
+  &-summary {
+    display: block;
+    &::-webkit-details-marker {
+      display: none;
+    }
+    &::before {
+      content: url(/dist/img/cart.png);
+      padding-right: 0.5em;
+    }
+  }
+  &[open] > &-summary::before {
+    content: url(/dist/img/cart.png);
   }
 }
