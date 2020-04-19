@@ -60,7 +60,7 @@
       "description": "Beolit 15",
       "price": "$599.00",
       "value": 599,
-      "image": "https://raw.githubusercontent.com/PawelMatusz/36-week/master/dist/img/bottle.png",
+      "image": "https://raw.githubusercontent.com/PawelMatusz/36-week/master/dist/img/beolit.png",
       "categories": ["white", "gray", "large", "bower"]
     },
     {
@@ -78,7 +78,7 @@
       "description": "Bookends",
       "price": "$179.00",
       "value": 179,
-      "image": "https://raw.githubusercontent.com/PawelMatusz/36-week/master/dist/img/bottle.png",
+      "image": "https://raw.githubusercontent.com/PawelMatusz/36-week/master/dist/img/bookends.png",
       "categories": ["white", "black", "large", "bower"]
     },
     {
