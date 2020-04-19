@@ -53,6 +53,78 @@
       "value": 69,
       "image": "https://raw.githubusercontent.com/PawelMatusz/36-week/master/dist/img/bottle.png",
       "categories": ["white", "gray", "large", "bower"]
+    },
+    {
+      "id": 7,
+      "name": "beolit",
+      "description": "Beolit 15",
+      "price": "$599.00",
+      "value": 599,
+      "image": "https://raw.githubusercontent.com/PawelMatusz/36-week/master/dist/img/bottle.png",
+      "categories": ["white", "gray", "large", "bower"]
+    },
+    {
+      "id": 8,
+      "name": "bottle",
+      "description": "Bottle Humidifier",
+      "price": "$69.00",
+      "value": 69,
+      "image": "https://raw.githubusercontent.com/PawelMatusz/36-week/master/dist/img/bottle.png",
+      "categories": ["white", "gray", "large", "bower"]
+    },
+    {
+      "id": 9,
+      "name": "bookends",
+      "description": "Bookends",
+      "price": "$179.00",
+      "value": 179,
+      "image": "https://raw.githubusercontent.com/PawelMatusz/36-week/master/dist/img/bottle.png",
+      "categories": ["white", "black", "large", "bower"]
+    },
+    {
+      "id": 10,
+      "name": "bottle",
+      "description": "Bottle Humidifier",
+      "price": "$69.00",
+      "value": 69,
+      "image": "https://raw.githubusercontent.com/PawelMatusz/36-week/master/dist/img/bottle.png",
+      "categories": ["white", "gray", "large", "bower"]
+    },
+    {
+      "id": 11,
+      "name": "bottle",
+      "description": "Bottle Humidifier",
+      "price": "$69.00",
+      "value": 69,
+      "image": "https://raw.githubusercontent.com/PawelMatusz/36-week/master/dist/img/bottle.png",
+      "categories": ["white", "gray", "large", "bower"]
+    },
+    {
+      "id": 12,
+      "name": "bottle",
+      "description": "Bottle Humidifier",
+      "price": "$69.00",
+      "value": 69,
+      "image": "https://raw.githubusercontent.com/PawelMatusz/36-week/master/dist/img/bottle.png",
+      "categories": ["white", "gray", "large", "bower"]
+    },
+    {
+      "id": 13,
+      "name": "bottle",
+      "description": "Bottle Humidifier",
+      "price": "$69.00",
+      "value": 69,
+      "image": "https://raw.githubusercontent.com/PawelMatusz/36-week/master/dist/img/bottle.png",
+      "categories": ["white", "gray", "large", "bower"]
+    },
+    {
+      "id": 14,
+      "name": "bottle",
+      "description": "Bottle Humidifier",
+      "price": "$69.00",
+      "value": 69,
+      "image": "https://raw.githubusercontent.com/PawelMatusz/36-week/master/dist/img/bottle.png",
+      "categories": ["white", "gray", "large", "bower"]
     }
   ]
 }

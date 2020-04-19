@@ -1,4 +1,6 @@
+
 <!DOCTYPE html>
+
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -55,7 +57,7 @@
           <div class="swiper-wrapper">
             <!-- Slides -->
             <div class="swiper-slide">
-              <img class="swiper-photo" src="/dist/img/plant__111.png" alt="" />
+              <img class="swiper-photo" src="/dist/img/plant_1.png" alt="" />
               <div class="swiper-description">
                 <h2>Discount 40% </h2>
                 <h2>Sale!!</h2>
@@ -75,8 +77,8 @@
             </div>
             <div class="swiper-slide">
               <img
-                class="swiper-photo swiper-photo-chair"
-                src="/dist/img/chair.png"
+                class="swiper-photo swiper-photo-plant3"
+                src="/dist/img/plant_3.png"
                 alt=""
                 class="swiper-photo"
               />
@@ -188,13 +190,14 @@
       <section id="newsletter" class="newsletter">
         <div class="wrapper newsletter__container ">
           <h2 class="newsletter__header">Get discount 35% off</h2>
-          <form class="newsletter__form" >
+          <form class="newsletter__form" action="/" method="POST" >
             <input
-              class="newsletter__form-mail"
-              type="mail"
-              placeholder="Enter your e-mail..."
+            class="newsletter__form-mail"
+            type="email"
+            placeholder="Enter your e-mail..."
+            name="email"
             />
-            <input class="newsletter__form-send" type="button" value="Send" />
+            <input class="newsletter__form-send" type="submit" value="Send" />
           </form>
         </div>
       </section>
