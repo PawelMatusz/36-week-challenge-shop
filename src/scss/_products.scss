@@ -21,6 +21,19 @@
   &__sort-select {
     border: none;
   }
+  &__pagination {
+    font-size: 1.8rem;
+    text-align: right;
+    margin-right: 2rem;
+    &-button {
+      &:not(:last-child) {
+        margin-right: 1.5rem;
+      }
+      &.active {
+        font-weight: bold;
+      }
+    }
+  }
 }
 
 .product {

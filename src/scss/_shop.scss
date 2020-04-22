@@ -7,6 +7,9 @@
   @include media(large) {
     flex-direction: column;
   }
+  &__products {
+    width: 100%;
+  }
   &__basket {
     position: relative;
     background-repeat: no-repeat;
