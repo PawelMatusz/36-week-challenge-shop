@@ -6,19 +6,6 @@ export const addProducts = products => {
   const pagination_element = document.querySelector('.shop__page');
   let current_page = 1;
   let rows = 6;
-  // productsIndex.innerHTML = '';
-  // products.map(product => {
-  //   let newCard = productCard.cloneNode(true);
-  //   const productPhoto = newCard.querySelector('.product__card-photo');
-  //   const productDescription = newCard.querySelector(
-  //     '.product__card-description'
-  //   );
-  //   const productPrice = newCard.querySelector('.product__card-price');
-  //   productPhoto.src = product.image;
-  //   productDescription.innerHTML = product.description;
-  //   productPrice.innerHTML = product.price;
-  //   productsIndex.appendChild(newCard);
-  // });
 
   function DisplayList(items, wrapper, rows_per_page, page) {
     wrapper.innerHTML = '';
