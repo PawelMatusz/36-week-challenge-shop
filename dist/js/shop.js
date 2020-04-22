@@ -15,16 +15,10 @@ getProducts().then(products => {
   addProducts(products);
 });
 
-filterPrice.addEventListener('click', () =>
-  filterProducts(items.slice(index, index + 6))
-);
+filterPrice.addEventListener('click', () => filterProducts(items));
 
-sortSelect.addEventListener('change', () =>
-  handleSelectChange(items.slice(index, index + 6))
-);
+sortSelect.addEventListener('change', () => handleSelectChange(items));
 
 buttons.forEach(button =>
-  button.addEventListener('click', () =>
-    filterByCategories(items.slice(index, index + 6), button)
-  )
+  button.addEventListener('click', () => filterByCategories(items, button))
 );

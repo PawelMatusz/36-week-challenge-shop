@@ -1,9 +1,9 @@
 // https://github.com/TylerPottsDev/vanillajs-pagination
+const productCard = document.querySelector('.product__card');
+const productsIndex = document.querySelector('.products__index');
 
 export const addProducts = products => {
-  const productCard = document.querySelector('.product__card');
-  const productsIndex = document.querySelector('.products__index');
-  const pagination_element = document.querySelector('.shop__page');
+  const pagination_element = document.querySelector('.products__pagination');
   let current_page = 1;
   let rows = 6;
 
@@ -44,14 +44,15 @@ export const addProducts = products => {
   function PaginationButton(page, items) {
     let button = document.createElement('button');
     button.innerText = page;
+    button.classList.add('products__pagination-button');
 
-    if (current_page == page) button.classList.add('active');
+    if (current_page === page) button.classList.add('active');
 
     button.addEventListener('click', function() {
       current_page = page;
       DisplayList(items, productsIndex, rows, current_page);
 
-      let current_btn = document.querySelector('.pagenumbers button.active');
+      let current_btn = document.querySelector('button.active');
       current_btn.classList.remove('active');
 
       button.classList.add('active');
