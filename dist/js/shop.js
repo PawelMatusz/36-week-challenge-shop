@@ -8,7 +8,6 @@ const filterPrice = document.querySelector('.filter__price-button');
 const buttons = document.querySelectorAll('[data-categories]');
 
 let items = [];
-let index = 0;
 
 getProducts().then(products => {
   items = products;
