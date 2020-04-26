@@ -1,10 +1,10 @@
 export const addSupToButton = (items, buttons) => {
   buttons.forEach(button => {
+    const sup = document.createElement('sup');
+    sup.classList.add('filter__sup');
     let prod = items.filter(product =>
       product.categories.includes(button.dataset.categories)
     );
-    const sup = document.createElement('sup');
-    sup.classList.add('filter__sup');
     if (
       button.dataset.categories !== 'all' &&
       !button.dataset.color &&

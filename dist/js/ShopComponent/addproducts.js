@@ -1,6 +1,14 @@
 // https://github.com/TylerPottsDev/vanillajs-pagination
 const productCard = document.querySelector('.product__card');
 const productsIndex = document.querySelector('.products__index');
+const shopBasket = document.querySelector('.shop__basket-area');
+
+const addToLike = function(e) {
+  if (e.target.classList.contains('product__card-like')) {
+    console.log(e.target.classList);
+    e.target.classList.toggle('product__card-like-is-active');
+  }
+};
 
 export const addProducts = products => {
   const pagination_element = document.querySelector('.products__pagination');
@@ -24,10 +32,13 @@ export const addProducts = products => {
         '.product__card-description'
       );
       const productPrice = newCard.querySelector('.product__card-price');
+      const productAddLike = newCard.querySelector('.product__card-like');
+
       productPhoto.src = item.image;
       productDescription.innerHTML = item.description;
       productPrice.innerHTML = item.price;
       productsIndex.appendChild(newCard);
+      newCard.addEventListener('click', e => addToLike(e));
     }
   }
 
