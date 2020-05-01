@@ -2,13 +2,7 @@
 const productCard = document.querySelector('.product__card');
 const productsIndex = document.querySelector('.products__index');
 const shopBasket = document.querySelector('.shop__basket-area');
-
-const addToLike = function(e) {
-  if (e.target.classList.contains('product__card-like')) {
-    console.log(e.target.classList);
-    e.target.classList.toggle('product__card-like-is-active');
-  }
-};
+let likesProducts = [];
 
 export const addProducts = products => {
   const pagination_element = document.querySelector('.products__pagination');
@@ -32,13 +26,12 @@ export const addProducts = products => {
         '.product__card-description'
       );
       const productPrice = newCard.querySelector('.product__card-price');
-      const productAddLike = newCard.querySelector('.product__card-like');
 
       productPhoto.src = item.image;
       productDescription.innerHTML = item.description;
       productPrice.innerHTML = item.price;
       productsIndex.appendChild(newCard);
-      newCard.addEventListener('click', e => addToLike(e));
+      newCard.addEventListener('click', e => addToBasket(e, newCard));
     }
   }
 
@@ -71,6 +64,15 @@ export const addProducts = products => {
 
     return button;
   }
+  const addToBasket = function(e, newCard) {
+    if (e.target.classList.contains('product__card-like')) {
+      e.target.classList.toggle('product__card-like-is-active');
+    }
+    if (e.target.classList.contains('fa-shopping-basket')) {
+      let newItem = newCard.cloneNode(true);
+      shopBasket.appendChild(newItem);
+    }
+  };
   DisplayList(products, productsIndex, rows, current_page);
   SetupPagination(products, pagination_element, rows);
 };
