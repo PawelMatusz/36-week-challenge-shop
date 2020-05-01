@@ -17,13 +17,14 @@
     display: block;
     width: 100%;
     &-area {
-      position: absolute;
+      position: fixed;
       top: 4rem;
       right: -4rem;
-      width: 60rem;
-      height: 50rem;
+      min-width: 60rem;
+      min-height: 80vh;
       display: flex;
-      background-color: red;
+      z-index: -1;
+      background-color: wheat;
     }
     &-summary {
       display: block;
