@@ -1,4 +1,4 @@
-import { addToBasket } from './AddToBasket';
+import { addToBasket } from './AddToBasket.js';
 
 export const displayList = (items, wrapper, rows_per_page, page) => {
   const productCard = document.querySelector('.product__card');

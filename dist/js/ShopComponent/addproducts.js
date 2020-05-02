@@ -2,8 +2,6 @@
 import { SetupPagination } from './ShopPagination.js';
 import { displayList } from './DisplayList.js';
 
-let likesProducts = [];
-
 export const addProducts = products => {
   const productsIndex = document.querySelector('.products__index');
   let rows = 6;
