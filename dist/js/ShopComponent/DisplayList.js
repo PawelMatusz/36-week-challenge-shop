@@ -1,8 +1,9 @@
 import { addToBasket } from './AddToBasket.js';
+import { ShopSelectors } from './ShopSelectors.js';
+const productCard = document.querySelector(ShopSelectors.productCard);
+const productsIndex = document.querySelector(ShopSelectors.productsIndex);
 
 export const displayList = (items, wrapper, rows_per_page, page) => {
-  const productCard = document.querySelector('.product__card');
-  const productsIndex = document.querySelector('.products__index');
   wrapper.innerHTML = '';
   page--;
 
