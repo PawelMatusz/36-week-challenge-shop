@@ -6,11 +6,11 @@ const Selectors = {
   shopMenu: '[data-shop-menu]',
 };
 
-const navIcon = document.querySelector(Selectors.icon);
-const header = document.querySelector(Selectors.header);
-const navItem = document.querySelectorAll(Selectors.item);
-const shopButton = document.querySelector(Selectors.shopButton);
-const shopMenu = document.querySelector(Selectors.shopMenu);
+const navIcon = document.querySelector(Selectors.icon),
+  header = document.querySelector(Selectors.header),
+  navItem = document.querySelectorAll(Selectors.item),
+  shopButton = document.querySelector(Selectors.shopButton),
+  shopMenu = document.querySelector(Selectors.shopMenu);
 
 navIcon.addEventListener('click', () => {
   header.classList.toggle('is-nav-open');

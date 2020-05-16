@@ -44,8 +44,8 @@
               <a class="header__nav-link" href="#newsletter" data-nav-link>contact</a>
             </li>
           </ul>
-          <details  class="shop__basket"> <summary class="shop__basket-summary"></summary> 
-            <div class="shop__basket-area"></div>
+          <details  class="shop__basket" > <summary class="shop__basket-summary"></summary> 
+            <div class="shop__basket-area" data-basket></div>
         </details>
         </nav>
       </div>
@@ -177,14 +177,14 @@
           </div>
           <section class="products__index" data-products-index>         
               <div class="product__card" data-product-card>
-                <img class="product__card-photo" src="">
-                <p class="product__card-description"></p>
-                <p class="product__card-price"></p>
-                <button class="product__card-like"></button>
-                <button class="product__card-add"><i class="fas fa-shopping-basket"></i></button>
+                <img class="product__card-photo" src="" data-product-photo>
+                <p class="product__card-description" data-product-description></p>
+                <p class="product__card-price" data-product-price></p>
+                <button class="product__card-like" data-product-like></button>
+                <button class="product__card-add" data-product-add><i class="fas fa-shopping-basket"></i></button>
                 </div>
               </section>
-              <div class="products__pagination"></div>
+              <div class="products__pagination" data-pagination></div>
         </section>
       </div>
       <section id="newsletter" class="newsletter">

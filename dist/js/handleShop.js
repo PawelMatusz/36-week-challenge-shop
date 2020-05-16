@@ -6,9 +6,9 @@ import { filterByCategories } from './ShopComponent/FilterByCategories.js';
 import { addSupToButton } from './ShopComponent/AddSupToButton.js';
 import { ShopSelectors } from './ShopComponent/ShopSelectors.js';
 
-const sortSelect = document.querySelector(ShopSelectors.sort);
-const filterPrice = document.querySelector(ShopSelectors.price);
-const buttons = document.querySelectorAll(ShopSelectors.categoriesButtons);
+const sortSelect = document.querySelector(ShopSelectors.sort),
+  filterPrice = document.querySelector(ShopSelectors.price),
+  buttons = document.querySelectorAll(ShopSelectors.categoriesButtons);
 
 let items = [];
 

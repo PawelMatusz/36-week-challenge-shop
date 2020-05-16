@@ -1,7 +1,8 @@
 import { addToBasket } from './AddToBasket.js';
 import { ShopSelectors } from './ShopSelectors.js';
-const productCard = document.querySelector(ShopSelectors.productCard);
-const productsIndex = document.querySelector(ShopSelectors.productsIndex);
+
+const productCard = document.querySelector(ShopSelectors.productCard),
+  productsIndex = document.querySelector(ShopSelectors.productsIndex);
 
 export const displayList = (items, wrapper, rows_per_page, page) => {
   wrapper.innerHTML = '';
@@ -15,11 +16,11 @@ export const displayList = (items, wrapper, rows_per_page, page) => {
     let item = paginatedItems[i];
 
     let newCard = productCard.cloneNode(true);
-    const productPhoto = newCard.querySelector('.product__card-photo');
-    const productDescription = newCard.querySelector(
-      '.product__card-description'
-    );
-    const productPrice = newCard.querySelector('.product__card-price');
+    const productPhoto = newCard.querySelector(ShopSelectors.productPhoto),
+      productDescription = newCard.querySelector(
+        ShopSelectors.productDescription
+      ),
+      productPrice = newCard.querySelector(ShopSelectors.productPrice);
 
     productPhoto.src = item.image;
     productDescription.innerHTML = item.description;

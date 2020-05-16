@@ -1,7 +1,8 @@
 import { addProducts } from './AddProducts.js';
+import { ShopSelectors } from './ShopSelectors.js';
 
 export const handleSelectChange = products => {
-  const key = document.querySelector('.products__sort-select').value;
+  const key = document.querySelector(ShopSelectors.sort).value;
   const sortedProducts = products.sort((a, b) => {
     if (b[key] < a[key]) {
       return 1;

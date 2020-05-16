@@ -1,9 +1,10 @@
 import { addToBasket } from './AddToBasket.js';
 import { displayList } from './DisplayList.js';
+import { ShopSelectors } from './ShopSelectors.js';
 
 let current_page = 1;
 let rows = 6;
-const productsIndex = document.querySelector('.products__index');
+const productsIndex = document.querySelector(ShopSelectors.productsIndex);
 export const SetupPagination = (items, wrapper, rows_per_page) => {
   wrapper.innerHTML = '';
 
