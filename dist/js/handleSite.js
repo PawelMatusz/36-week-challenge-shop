@@ -1,8 +1,16 @@
-const navIcon = document.querySelector('.nav__icon');
-const header = document.querySelector('.header');
-const navItem = document.querySelectorAll('.header__nav-link');
-const shopButton = document.querySelector('.shop__button');
-const shopMenu = document.querySelector('.shop__menu');
+const Selectors = {
+  icon: '[data-nav-icon]',
+  header: '[data-header]',
+  item: '[data-nav-link]',
+  shopButton: '[data-shop-button]',
+  shopMenu: '[data-shop-menu]',
+};
+
+const navIcon = document.querySelector(Selectors.icon);
+const header = document.querySelector(Selectors.header);
+const navItem = document.querySelectorAll(Selectors.item);
+const shopButton = document.querySelector(Selectors.shopButton);
+const shopMenu = document.querySelector(Selectors.shopMenu);
 
 navIcon.addEventListener('click', () => {
   header.classList.toggle('is-nav-open');

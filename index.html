@@ -18,9 +18,9 @@
   </head>
 
   <body>
-    <header id="header" class="header">
+    <header id="header" class="header" data-header>
       <div class="wrapper">
-        <div class="nav__icon">
+        <div class="nav__icon" data-nav-icon>
           <span class="nav__item"></span>
           <span class="nav__item"></span>
           <span class="nav__item"></span>
@@ -33,15 +33,15 @@
           <ul class="header__nav-container ">
             <li class="header__nav-item">
               
-              <a class="header__nav-link" href="#header">home</a>
+              <a class="header__nav-link" href="#header" data-nav-link>home</a>
             </li>
             <li class="header__nav-item">
               <a class="header__nav-link header__nav-link--shop" href="#shop"
-                >shop</a
+                 data-nav-link>shop</a
               >
             </li>
             <li class="header__nav-item">
-              <a class="header__nav-link" href="#newsletter">contact</a>
+              <a class="header__nav-link" href="#newsletter" data-nav-link>contact</a>
             </li>
           </ul>
           <details  class="shop__basket"> <summary class="shop__basket-summary"></summary> 
@@ -100,8 +100,8 @@
     
     <main id="main" class="main">
       <div id="shop" class=" shop wrapper">
-        <button class="shop__button">Filter</button>
-        <div class="shop__menu">
+        <button class="shop__button" data-shop-button>Filter</button>
+        <div class="shop__menu" data-shop-menu>
           <section class="menu__categories">
             <h2 class="menu__categories-header">Categories</h2>
             <button data-categories="all" class="menu__categories-item">All products</button>
@@ -119,7 +119,7 @@
               <form class="filter__price-form">
                 <input class="filter__price-value filter__price-value--min" />
                 <input class="filter__price-value filter__price-value--max" />
-                <input type="button" value="Filter" class="filter__price-button">
+                <input type="button" value="Filter" class="filter__price-button" data-price>
                   
                 </input>
               </form>
@@ -127,19 +127,19 @@
             <div class="filter__color">
               <h3 class="filter__color-header">Color</h3>
               <button
-              data-categories="gray" data-color="color" class="filter__color-button filter__color-button--gray"
+              data-categories="gray" data-color="gray" class="filter__color-button filter__color-button--gray"
               ></button>
               <button
-              data-categories="white" data-color="color" class="filter__color-button filter__color-button--white"
+              data-categories="white" data-color="white" class="filter__color-button filter__color-button--white"
               ></button>
               <button
-              data-categories="red" data-color="color" class="filter__color-button filter__color-button--red"
+              data-categories="red" data-color="red" class="filter__color-button filter__color-button--red"
               ></button>
               <button
-              data-categories="blue" data-color="color" class="filter__color-button filter__color-button--blue"
+              data-categories="blue" data-color="blue" class="filter__color-button filter__color-button--blue"
               ></button>
               <button
-              data-categories="green" data-color="color" class="filter__color-button filter__color-button--green"
+              data-categories="green" data-color="green" class="filter__color-button filter__color-button--green"
               ></button>
             </div>
             <div class="filter__size">
@@ -164,7 +164,7 @@
           <div class="products__options">
             <form >
             <label class="products__sort" for="sort">Sort By: 
-              <select class="products__sort-select" id="sort">
+              <select class="products__sort-select" data-sort id="sort">
                 <option value="empty"></option>
                 <option value="value">Price</option>
                 <option value="description">A-Z</option>

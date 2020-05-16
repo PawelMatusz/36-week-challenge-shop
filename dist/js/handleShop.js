@@ -4,9 +4,11 @@ import { getProducts } from './ShopComponent/GetProducts.js';
 import { handleSelectChange } from './ShopComponent/HandleSelectChange.js';
 import { filterByCategories } from './ShopComponent/FilterByCategories.js';
 import { addSupToButton } from './ShopComponent/AddSupToButton.js';
-const sortSelect = document.querySelector('.products__sort-select');
-const filterPrice = document.querySelector('.filter__price-button');
-const buttons = document.querySelectorAll('[data-categories]');
+import { ShopSelectors } from './ShopSelectors.js';
+
+const sortSelect = document.querySelector(ShopSelectors.sort);
+const filterPrice = document.querySelector(ShopSelectors.price);
+const buttons = document.querySelectorAll(ShopSelectors.categoriesButtons);
 
 let items = [];
 
