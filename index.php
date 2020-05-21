@@ -1,3 +1,22 @@
+<?php
+$email= $_POST['email'] ??null ;
+
+$status = null;
+if($email){
+  $file = fopen('emails', 'a');
+  $result = fwrite($file, $email, "\n");
+  fclose($file);
+
+
+if($result !== false){
+  $status = true;
+} else{
+ $status = false;
+}
+}
+?>
+
+
 <!DOCTYPE html>
 
 <html lang="en">
@@ -189,6 +208,12 @@
       </div>
       <section id="newsletter" class="newsletter">
         <div class="wrapper newsletter__container ">
+          <?php if($status === true) : ?>
+            <div>wysłąno</div>
+          <?php 
+         elseif($status===false) : ?>
+          <div>błąd</div>
+          <?php endif; ?>
           <h2 class="newsletter__header">Get discount 35% off</h2>
           
           <form class="newsletter__form" action="/" method="POST" >

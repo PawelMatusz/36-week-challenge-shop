@@ -9,8 +9,8 @@ export const addProducts = products => {
       ShopSelectors.productsPagination
     );
 
-  let rows = 6;
-  let current_page = 1;
+  let rows = 6,
+    current_page = 1;
   displayList(products, productsIndex, rows, current_page);
   SetupPagination(products, pagination_element, rows);
 };
