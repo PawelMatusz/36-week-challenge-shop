@@ -190,14 +190,15 @@
       <section id="newsletter" class="newsletter">
         <div class="wrapper newsletter__container ">
           <h2 class="newsletter__header">Get discount 35% off</h2>
-          <form class="newsletter__form" action="/" method="POST" >
+          <form class="newsletter__form" data-newsletter-form >
             <input
             class="newsletter__form-mail"
             type="email"
             placeholder="Enter your e-mail..."
             name="email"
+            data-newsletter-email
             />
-            <input class="newsletter__form-send" type="button" value="Send" />
+            <input class="newsletter__form-send" type="submit" data-newsletter-button value="Send"/>
           </form>
         </div>
       </section>
