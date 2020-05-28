@@ -23,7 +23,5 @@ filterPrice.addEventListener('click', () => filterProducts(items));
 sortSelect.addEventListener('change', () => handleSelectChange(items));
 
 buttons.forEach(button => {
-  button.addEventListener('click', () => {
-    filterByCategories(items, button);
-  });
+  button.addEventListener('click', () => filterByCategories(items, button));
 });

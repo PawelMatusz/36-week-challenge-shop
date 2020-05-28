@@ -40,7 +40,6 @@ shopButton.addEventListener('click', () => {
 });
 
 newsletterForm.addEventListener('submit', e => {
-  console.log(newsletterForm);
   e.preventDefault();
   if (newsletterInputEmail.value.length >= 3) {
     alert(`${newsletterInputEmail.value} zapisany do newslettera!!!`);
