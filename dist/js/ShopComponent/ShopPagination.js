@@ -1,4 +1,3 @@
-import { addToBasket } from './AddToBasket.js';
 import { displayList } from './DisplayList.js';
 import { ShopSelectors } from './ShopSelectors.js';
 

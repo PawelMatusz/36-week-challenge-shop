@@ -1,4 +1,5 @@
 import { addToBasket } from './AddToBasket.js';
+import { addToLike } from './AddToLike.js';
 import { ShopSelectors } from './ShopSelectors.js';
 
 const productCard = document.querySelector(ShopSelectors.productCard),
@@ -27,5 +28,6 @@ export const displayList = (items, wrapper, rows_per_page, page) => {
     productPrice.innerHTML = item.price;
     productsIndex.appendChild(newCard);
     newCard.addEventListener('click', e => addToBasket(e, newCard));
+    newCard.addEventListener('click', e => addToLike(e));
   }
 };
