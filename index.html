@@ -44,9 +44,20 @@
               <a class="header__nav-link" href="#newsletter" data-nav-link>contact</a>
             </li>
           </ul>
-          <details  class="shop__basket" > <summary class="shop__basket-summary"></summary> 
-            <div class="shop__basket-area" data-basket></div>
-        </details>
+          <details  class="shop__basket" > 
+            <summary class="shop__basket-summary"></summary> 
+            <div class="shop__basket-area" data-basket>
+              <form class="shop__basket-card" data-basket-card>
+                <img class="shop__basket-photo" src="" data-basket-photo>
+                <div class="shop__basket">
+                  <p class="shop__basket-description" data-basket-description></p>
+                  <p class="shop__basket-price" data-basket-price></p>
+                </div>
+                  <input type="number" >
+                  <button>X</button>
+              </form>
+            </div>
+          </details>
         </nav>
       </div>
     </header>
