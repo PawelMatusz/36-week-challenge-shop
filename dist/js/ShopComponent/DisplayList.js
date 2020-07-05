@@ -27,7 +27,7 @@ export const displayList = (items, wrapper, rows_per_page, page) => {
     productDescription.innerHTML = item.description;
     productPrice.innerHTML = item.price;
     productsIndex.appendChild(newCard);
-    newCard.addEventListener('click', e => addToBasket(e, newCard));
+    newCard.addEventListener('click', e => addToBasket(e));
     newCard.addEventListener('click', e => addToLike(e));
   }
 };

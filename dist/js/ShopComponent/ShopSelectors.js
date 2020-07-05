@@ -11,4 +11,5 @@ export const ShopSelectors = {
   productLike: '[data-product-like]',
   productAdd: '[data-product-add]',
   shopBasket: '[data-basket]',
+  basketCard: '[data-basket-card]',
 };
