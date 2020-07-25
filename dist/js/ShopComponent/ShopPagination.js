@@ -4,6 +4,7 @@ import { ShopSelectors } from './ShopSelectors.js';
 let current_page = 1;
 let rows = 6;
 const productsIndex = document.querySelector(ShopSelectors.productsIndex);
+
 export const SetupPagination = (items, wrapper, rows_per_page) => {
   wrapper.innerHTML = '';
 
@@ -13,6 +14,7 @@ export const SetupPagination = (items, wrapper, rows_per_page) => {
     wrapper.appendChild(btn);
   }
 };
+
 const PaginationButton = (page, items) => {
   let button = document.createElement('button');
   button.innerText = page;

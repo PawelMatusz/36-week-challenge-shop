@@ -1,11 +1,13 @@
 import { ShopSelectors } from './ShopSelectors.js';
 
-const shopBasket = document.querySelector(ShopSelectors.shopBasket);
+const basket = document.querySelector(ShopSelectors.shopBasket);
 const basketCardContainer = document.querySelector(ShopSelectors.basketCard);
-shopBasket.innerHTML = '';
+
+basket.innerHTML = '';
+
 export const addToBasket = e => {
   if (e.target.classList.contains('fa-shopping-basket')) {
-    const product = e.target.parentElement.parentElement;
+    const product = e.target.closest(ShopSelectors.productCard);
 
     let basketCard = basketCardContainer.cloneNode(true);
     const basketPhoto = basketCard.querySelector('.shop__basket-photo'),
@@ -19,6 +21,6 @@ export const addToBasket = e => {
     basketPrice.textContent = product.querySelector(
       '.product__card-price'
     ).textContent;
-    shopBasket.appendChild(basketCard);
+    basket.appendChild(basketCard);
   } else return;
 };
