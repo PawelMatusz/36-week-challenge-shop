@@ -24,7 +24,7 @@ formbutton('create', {
       name: 'message',
       placeholder: "What's on your mind?",
     },
-    { type: 'submit' },
+    { type: 'submit', value: 'Send' },
   ],
   styles: {
     fontFamily: 'Montserrat',
