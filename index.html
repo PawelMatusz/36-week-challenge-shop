@@ -201,16 +201,17 @@
       <section id="newsletter" class="newsletter">
         <div class="wrapper newsletter__container ">
           <h2 class="newsletter__header">Get discount 35% off</h2>
-          <form class="newsletter__form" action="https://formspree.io/xbjzqegr" method="POST" data-newsletter-form >
+          <form class="newsletter__form" data-newsletter-form  action="https://formspree.io/xbjzqegr" method="POST" >
             <input
             class="newsletter__form-mail"
-            type="text"
+            type="email"
             placeholder="Enter your e-mail..."
             name="_replyto"
             data-newsletter-email
             />
             <input class="newsletter__form-send" type="submit" data-newsletter-button value="Send"/>
           </form>
+          <p data-newsletter-status></p>
         </div>
       </section>
     </main>
@@ -227,7 +228,10 @@
     </footer>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="/dist/js/slider.js"></script>
+    <script src="https://formspree.io/js/formbutton-v1.0.0.min.js" defer></script>
     <script src="/dist/js/handleSite.js"></script>
+    <script src="/dist/js/handleForm.js"></script>
     <script type="module" src="dist/js/handleShop.js"></script>
+    
   </body>
 </html>

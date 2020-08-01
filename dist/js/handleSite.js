@@ -38,12 +38,3 @@ window.addEventListener('scroll', () => {
 shopButton.addEventListener('click', () => {
   shopMenu.classList.toggle('is-menu-open');
 });
-
-newsletterForm.addEventListener('submit', e => {
-  e.preventDefault();
-  if (newsletterInputEmail.value.length >= 3) {
-    alert(`${newsletterInputEmail.value} zapisany do newslettera!!!`);
-  } else {
-    alert('Kolego wypełniłeś błędnie nasz super formularz');
-  }
-});
