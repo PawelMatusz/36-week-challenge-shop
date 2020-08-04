@@ -11,7 +11,7 @@ $font-weight: normal;
   }
   &__price {
     margin-bottom: 3rem;
-    @include media(large) {
+    @include large {
       display: flex;
       justify-content: center;
     }
@@ -19,7 +19,7 @@ $font-weight: normal;
       margin-bottom: 2rem;
       font-size: $filter-header-size;
       font-weight: $font-weight;
-      @include media(large) {
+      @include large {
         margin-right: 2rem;
       }
     }
@@ -45,7 +45,7 @@ $font-weight: normal;
   }
   &__color {
     margin-bottom: 4rem;
-    @include media(large) {
+    @include large {
       display: flex;
       justify-content: center;
       align-self: center;
@@ -54,7 +54,7 @@ $font-weight: normal;
       margin-bottom: 2rem;
       font-size: $filter-header-size;
       font-weight: $font-weight;
-      @include media(large) {
+      @include large {
         margin-right: 2rem;
       }
     }
@@ -87,7 +87,7 @@ $font-weight: normal;
   }
   &__size {
     margin-bottom: 4rem;
-    @include media(large) {
+    @include large {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -96,7 +96,7 @@ $font-weight: normal;
       margin-bottom: 2rem;
       font-size: $filter-header-size;
       font-weight: $font-weight;
-      @include media(large) {
+      @include large {
         margin-right: 2rem;
         margin-bottom: 0;
       }
@@ -109,7 +109,7 @@ $font-weight: normal;
       opacity: 0.7;
       &:not(:last-child) {
         margin-bottom: 3rem;
-        @include media(large) {
+        @include large {
           margin-bottom: 0;
           margin-right: 2rem;
         }
@@ -122,7 +122,7 @@ $font-weight: normal;
   &__brands {
     margin-bottom: 6rem;
     border-bottom: 1px solid black;
-    @include media(large) {
+    @include large {
       display: none;
     }
     &-header {

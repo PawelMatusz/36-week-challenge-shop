@@ -2,7 +2,7 @@
   &__categories {
     border-bottom: 1px solid black;
     margin-bottom: 5rem;
-    @include media(large) {
+    @include large {
       margin-bottom: 2rem;
       text-align: center;
     }
@@ -19,18 +19,18 @@
 
       &:last-child {
         margin-bottom: 5rem;
-        @include media(large) {
+        @include large {
           margin-bottom: 0;
         }
       }
       &:not(:last-child) {
         margin-bottom: 3rem;
-        @include media(large) {
+        @include large {
           margin-bottom: 2rem;
           margin-right: 1rem;
         }
       }
-      @include media(large) {
+      @include large {
         display: inline-block;
         font-size: 1.4rem;
       }
@@ -40,7 +40,7 @@
     }
   }
   &__filters {
-    @include media(large) {
+    @include large {
       display: flex;
       flex-direction: column;
       justify-content: center;

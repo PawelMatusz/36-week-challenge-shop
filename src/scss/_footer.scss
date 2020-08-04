@@ -6,7 +6,7 @@
     justify-content: space-evenly;
     font-size: 2rem;
     flex-wrap: wrap;
-    @include media(medium) {
+    @include medium {
       flex-direction: column;
     }
   }

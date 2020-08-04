@@ -1,28 +1,26 @@
-// media querries map mixin
+$xsmall: 640px;
+$small: 679px;
+$medium: 800px;
+$large: 1024px;
 
-$breakpoints: (
-  xsmall: (
-    max-width: 640px,
-  ),
-  small: (
-    max-width: 679px,
-  ),
-  medium: (
-    max-width: 800px,
-  ),
-  large: (
-    max-width: 1024px,
-  ),
-);
+@mixin xsmall {
+  @media (max-width: #{$xsmall}) {
+    @content;
+  }
+}
 
-@mixin media($breakpoint) {
-  $size: map-get($breakpoints, $breakpoint);
-
-  @if ($size) {
-    @media #{$size} {
-      @content;
-    }
-  } @else {
-    @error 'nie rozpoznana wartość!';
+@mixin small {
+  @media (max-width: #{$small}) {
+    @content;
+  }
+}
+@mixin medium {
+  @media (max-width: #{$medium}) {
+    @content;
+  }
+}
+@mixin large {
+  @media (max-width: #{$large}) {
+    @content;
   }
 }

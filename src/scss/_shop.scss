@@ -4,7 +4,7 @@
   display: flex;
   padding-bottom: 6rem;
   padding-top: 9rem;
-  @include media(large) {
+  @include large {
     flex-direction: column;
   }
   &__products {
@@ -32,12 +32,12 @@
         display: none;
       }
       &::before {
-        content: url(/dist/img/cart.png);
+        content: url(/src/img/cart.png);
         padding-right: 0.5em;
       }
     }
     &[open] > &-summary::before {
-      content: url(/dist/img/cart.png);
+      content: url(/src/img/cart.png);
     }
   }
 
@@ -45,7 +45,7 @@
     width: 27.5rem;
     margin-right: 5rem;
 
-    @include media(large) {
+    @include large {
       display: none;
       &.is-menu-open {
         display: flex;
@@ -60,7 +60,7 @@
   }
   &__button {
     display: none;
-    @include media(large) {
+    @include large {
       display: block;
       min-height: 4rem;
       width: 16rem;

@@ -6,7 +6,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    @include media(medium) {
+    @include medium {
       flex-direction: column;
     }
   }
@@ -16,7 +16,7 @@
     font-weight: normal;
     font-family: 'Nothing You Could Do';
     text-align: center;
-    @include media(medium) {
+    @include medium {
       margin-bottom: 1rem;
       margin-right: 0;
     }
@@ -24,7 +24,7 @@
   &__form {
     min-height: 4rem;
     display: flex;
-    @include media(small) {
+    @include small {
       flex-direction: column;
       align-items: center;
     }
@@ -33,7 +33,7 @@
       height: 100%;
       max-width: 50rem;
       margin-right: 1rem;
-      @include media(small) {
+      @include small {
         margin-bottom: 1rem;
       }
       &[placeholder] {
