@@ -20,6 +20,8 @@ Project #36 from weekly webdev challenge using HTML CSS Javascript and JSON with
 
 https://wizardly-archimedes-6a4104.netlify.com
 
+parcel-branch https://blissful-liskov-5e2e4e.netlify.app/
+
 ## Inspiration
 
 weekly webdev challenge no.36
