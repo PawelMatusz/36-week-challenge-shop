@@ -7,7 +7,7 @@
 
 ## General info
 
-Project #36 from weekly webdev challenge using HTML CSS Javascript and JSON with asynchronous function for getting products from json and adding to the site
+Project #36 from weekly webdev challenge using HTML CSS Javascript and JSON with asynchronous function for getting products from json and adding to the site and use Parcel to bundling
 
 ## Technologies
 
