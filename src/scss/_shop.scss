@@ -18,16 +18,20 @@
     width: 100%;
     &-area {
       position: fixed;
-      top: 4rem;
-      right: -4rem;
-      min-width: 60rem;
-      min-height: 80vh;
+      top: 8rem;
+      right: 3rem;
+      max-width: 60rem;
+      max-height: 80vh;
       display: flex;
       z-index: -1;
-      background-color: wheat;
+      background-color: #fff;
+      justify-content: space-around;
+      flex-wrap: wrap;
     }
     &-summary {
       display: block;
+      outline: none;
+      cursor: pointer;
       &::-webkit-details-marker {
         display: none;
       }
@@ -38,6 +42,11 @@
     }
     &[open] > &-summary::before {
       content: url(/dist/img/cart.png);
+    }
+    &-card {
+      width: 33%;
+      height: 50%;
+      font-size: 1.6rem;
     }
   }
 

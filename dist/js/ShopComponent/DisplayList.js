@@ -26,6 +26,7 @@ export const displayList = (items, wrapper, rows_per_page, page) => {
     productPhoto.src = item.image;
     productDescription.innerHTML = item.description;
     productPrice.innerHTML = item.price;
+    newCard.dataset.id = item.id;
     productsIndex.appendChild(newCard);
     newCard.addEventListener('click', e => addToBasket(e));
     newCard.addEventListener('click', e => addToLike(e));

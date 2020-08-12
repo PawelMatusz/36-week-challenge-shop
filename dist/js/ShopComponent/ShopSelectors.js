@@ -12,4 +12,8 @@ export const ShopSelectors = {
   productAdd: '[data-product-add]',
   shopBasket: '[data-basket]',
   basketCard: '[data-basket-card]',
+  basketPhoto: '[data-basket-photo]',
+  basketDescription: '[data-basket-description]',
+  basketPrice: '[data-basket-price]',
+  basketRemoveButton: '[data-basket-remove]',
 };
