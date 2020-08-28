@@ -13,9 +13,8 @@ const sortSelect = document.querySelector(ShopSelectors.sort),
 let items = [];
 
 getProducts().then(products => {
-  items = products;
-  addProducts(products);
   addSupToButton(items, buttons);
+  addProducts(products);
 });
 
 filterPrice.addEventListener('click', () => filterProducts(items));

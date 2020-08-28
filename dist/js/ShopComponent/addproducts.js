@@ -4,6 +4,8 @@ import { displayList } from './DisplayList.js';
 import { ShopSelectors } from './ShopSelectors.js';
 
 export const addProducts = products => {
+  const items = [];
+  items.push(...products);
   const productsIndex = document.querySelector(ShopSelectors.productsIndex),
     pagination_element = document.querySelector(
       ShopSelectors.productsPagination
@@ -11,6 +13,6 @@ export const addProducts = products => {
 
   let rows = 6,
     current_page = 1;
-  displayList(products, productsIndex, rows, current_page);
-  SetupPagination(products, pagination_element, rows);
+  displayList(items, productsIndex, rows, current_page);
+  SetupPagination(items, pagination_element, rows);
 };
