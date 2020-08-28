@@ -13,8 +13,9 @@ const sortSelect = document.querySelector(ShopSelectors.sort),
 let items = [];
 
 getProducts().then(products => {
-  addSupToButton(items, buttons);
+  items.push(...products);
   addProducts(products);
+  addSupToButton(items, buttons);
 });
 
 filterPrice.addEventListener('click', () => filterProducts(items));
