@@ -16,6 +16,11 @@ Project #36 from weekly webdev challenge using HTML CSS Javascript and JSON with
 - JavaScript
 - JSON
 
+## ToDo
+
+- localStorage
+- styles for shopping cart
+
 ## DEMO
 
 https://wizardly-archimedes-6a4104.netlify.com
