@@ -4,6 +4,9 @@
 
 - [General info](#general-info)
 - [Technologies](#technologies)
+- [ToDo](#ToDo)
+- [Live](#Live)
+- [Inspiration](#Inspiration)
 
 ## General info
 
@@ -21,7 +24,7 @@ Project #36 from weekly webdev challenge using HTML CSS Javascript and JSON with
 - localStorage
 - styles for shopping cart
 
-## DEMO
+## Live
 
 https://wizardly-archimedes-6a4104.netlify.com
 
