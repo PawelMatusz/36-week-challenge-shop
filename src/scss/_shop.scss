@@ -47,6 +47,21 @@
       width: 33%;
       height: 50%;
       font-size: 1.6rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex: 0;
+      flex-direction: column;
+    }
+    &-price,
+    &-description {
+      text-align: center;
+    }
+    &-button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      align-self: flex-end;
     }
   }
 

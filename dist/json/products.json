@@ -7,7 +7,7 @@
       "price": "$159.00",
       "value": 159,
       "image": "https://raw.githubusercontent.com/PawelMatusz/36-week/master/dist/img/scissors.png",
-      "categories": ["black", "gray", "medium", "braun"]
+      "categories": ["black", "gray", "medium", "braun", "accesories"]
     },
     {
       "id": 2,
@@ -16,7 +16,7 @@
       "price": "$215.00",
       "value": 215,
       "image": "https://raw.githubusercontent.com/PawelMatusz/36-week/master/dist/img/watch.png",
-      "categories": ["black", "gray", "medium", "braun"]
+      "categories": ["black", "gray", "medium", "braun", "accesories"]
     },
     {
       "id": 3,
@@ -25,7 +25,7 @@
       "price": "$55.00",
       "value": 55,
       "image": "https://raw.githubusercontent.com/PawelMatusz/36-week/master/dist/img/teapot.png",
-      "categories": ["green", "gray", "medium", "bower"]
+      "categories": ["green", "gray", "medium", "bower", "dinning"]
     },
     {
       "id": 4,
@@ -34,7 +34,7 @@
       "price": "$59.00",
       "value": 59,
       "image": "https://raw.githubusercontent.com/PawelMatusz/36-week/master/dist/img/sweeper.png",
-      "categories": ["red", "gray", "medium", "braun"]
+      "categories": ["red", "gray", "medium", "field", "accesories"]
     },
     {
       "id": 5,
@@ -43,7 +43,7 @@
       "price": "$349.00",
       "value": 349,
       "image": "https://raw.githubusercontent.com/PawelMatusz/36-week/master/dist/img/bulb.png",
-      "categories": ["green", "gray", "small", "braun"]
+      "categories": ["green", "gray", "small", "elevenplus", "lighting"]
     },
     {
       "id": 6,
@@ -52,7 +52,7 @@
       "price": "$69.00",
       "value": 69,
       "image": "https://raw.githubusercontent.com/PawelMatusz/36-week/master/dist/img/bottle.png",
-      "categories": ["white", "gray", "large", "bower"]
+      "categories": ["white", "gray", "large", "bower", "accesories"]
     },
     {
       "id": 7,
@@ -61,7 +61,7 @@
       "price": "$599.00",
       "value": 599,
       "image": "https://raw.githubusercontent.com/PawelMatusz/36-week/master/dist/img/beolit.png",
-      "categories": ["white", "gray", "large", "bower"]
+      "categories": ["white", "gray", "large", "henry-wilson", "living"]
     },
     {
       "id": 8,
@@ -70,7 +70,7 @@
       "price": "$69.00",
       "value": 69,
       "image": "https://raw.githubusercontent.com/PawelMatusz/36-week/master/dist/img/bottle.png",
-      "categories": ["white", "gray", "large", "bower"]
+      "categories": ["white", "gray", "large", "bower", "dinning"]
     },
     {
       "id": 9,
@@ -79,7 +79,7 @@
       "price": "$179.00",
       "value": 179,
       "image": "https://raw.githubusercontent.com/PawelMatusz/36-week/master/dist/img/bookends.png",
-      "categories": ["white", "black", "large", "bower"]
+      "categories": ["white", "black", "large", "bunshu-hamono", "accesories"]
     },
     {
       "id": 10,
