@@ -32,7 +32,7 @@
         <nav class="header__nav">
           <ul class="header__nav-container ">
             <li class="header__nav-item">
-              
+
               <a class="header__nav-link" href="#header" data-nav-link>home</a>
             </li>
             <li class="header__nav-item">
@@ -44,11 +44,11 @@
               <a class="header__nav-link" href="#newsletter" data-nav-link>contact</a>
             </li>
           </ul>
-          <details  class="shop__basket" > 
-            <summary class="shop__basket-summary"></summary> 
+          <details  class="shop__basket" >
+            <summary class="shop__basket-summary"></summary>
             <div class="shop__basket-area" data-basket>
               <form class="shop__basket-card" data-basket-card>
-                <button class="shop__basket-button" data-basket-remove>X</button>
+                <button class="shop__basket-button" data-basket-remove><i class="fa fa-times-circle"></i></button>
                 <img class="shop__basket-photo" src="" data-basket-photo>
                 <div class="shop__basket">
                   <p class="shop__basket-description" data-basket-description></p>
@@ -108,7 +108,7 @@
       </a>
     </div>
   </div>
-    
+
     <main id="main" class="main">
       <div id="shop" class=" shop wrapper">
         <button class="shop__button" data-shop-button>Filter</button>
@@ -131,7 +131,7 @@
                 <input class="filter__price-value filter__price-value--min" />
                 <input class="filter__price-value filter__price-value--max" />
                 <input type="button" value="Filter" class="filter__price-button" data-price>
-                  
+
                 </input>
               </form>
             </div>
@@ -174,7 +174,7 @@
         <section class="shop__products">
           <div class="products__options">
             <form >
-            <label class="products__sort" for="sort">Sort By: 
+            <label class="products__sort" for="sort">Sort By:
               <select class="products__sort-select" data-sort id="sort">
                 <option value="empty"></option>
                 <option value="value">Price</option>
@@ -186,7 +186,7 @@
               Showing <span></span> of <span></span> result
             </p>
           </div>
-          <section class="products__index" data-products-index>         
+          <section class="products__index" data-products-index>
               <div class="product__card" data-product-card >
                 <img class="product__card-photo" src="" data-product-photo>
                 <p class="product__card-description" data-product-description></p>
@@ -232,6 +232,6 @@
     <script src="/dist/js/handleSite.js"></script>
     <script src="/dist/js/handleForm.js"></script>
     <script type="module" src="dist/js/handleShop.js"></script>
-    
+
   </body>
 </html>

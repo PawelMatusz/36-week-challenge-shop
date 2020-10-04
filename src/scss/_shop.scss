@@ -18,14 +18,14 @@
     width: 100%;
     &-area {
       position: fixed;
-      top: 8rem;
+      top: 9rem;
       right: 3rem;
-      max-width: 60rem;
-      max-height: 80vh;
+      width: 100vw;
+      height: 80vh;
       display: flex;
       z-index: -1;
       background-color: #fff;
-      justify-content: space-around;
+      justify-content: space-evenly;
       flex-wrap: wrap;
     }
     &-summary {
@@ -44,18 +44,21 @@
       content: url(/dist/img/cart.png);
     }
     &-card {
-      width: 33%;
+      position: relative;
+      width: 30rem;
       height: 50%;
       font-size: 1.6rem;
       display: flex;
       justify-content: center;
       align-items: center;
-      flex: 0;
       flex-direction: column;
     }
     &-price,
     &-description {
       text-align: center;
+    }
+    &-price {
+      margin-top: 0.5rem;
     }
     &-button {
       position: absolute;
